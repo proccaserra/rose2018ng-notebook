@@ -5,6 +5,7 @@ a repository for notebooks associated with Rose targeted metabolite profiling an
 # Specifying an R environment with a runtime.txt file
 
 Jupyter+R: [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-metabolites-analysis.ipynb)
+TEST: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ISA-tools/dtp-isa-exercises/master?filepath=exercise.ipynb)
 
 RStudio: [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?urlpath=rstudio)
 
