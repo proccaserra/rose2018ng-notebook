@@ -46,15 +46,15 @@
         "path": "rose_aroma_science2015_10-1126-aab0696-Table-S3-compounds_only_one_variable.csv",
         "schema": {
             "fields": [
-            {
+                {
                 "name": "chemical_name",
                 "title": "metabolite name",
                 "description": "the common name of a chemical compound",
                 "format": "default",
                 "type": "string",
                 "rdfType": "",
-                "constraints" : { "required": true }
-            },
+                "constraints": { "required": true }
+                },
             {
                 "name": "inchi",
                 "title": "inchi string",
@@ -67,10 +67,10 @@
                     "pattern": "/^((InChI=)?[^J][0-9a-z+\\-\\(\\)\\\/,]+)$/ig"
                 }
             },
-             {
+            {
                 "name": "chebi_identifier",
                 "title": "database identifier",
-                "description": "an identifer from chemical entity of biological interest database/ontology",
+                "description": "an identifier from chemical entity of biological interest database/ontology",
                 "format": "default",
                 "type": "string",
                 "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
@@ -93,7 +93,7 @@
             {
                 "name": "var1_uri",
                 "title": "a resolvable uri for the levels of variable #1",
-                "description": "discrete levels of an independent variable",
+                "description": "a uri for a discrete level of an independent variable",
                 "format": "default",
                 "type": "string",
                 "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
@@ -150,9 +150,9 @@
                 "rdfType": "http://purl.obolibrary.org/obo/STATO_0000037",
                 "constraints": {"required": false}
             }           
-            ]
+        ]
         }
     }]
     ,
-    "missingValues": ["-","NA"]
+    "missingValues": ["","-","NA"]
 }

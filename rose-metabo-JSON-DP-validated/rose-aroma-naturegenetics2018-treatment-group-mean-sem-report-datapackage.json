@@ -1,6 +1,6 @@
 {
     "profile": "tabular-data-package",
-    "name": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example",
+    "name": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage",
     "title": "Metabolite Univariate Group Comparison 2 variables Data Package",
     "homepage" : "https://github.com/proccaserra",
     "version": "1.0",
@@ -39,7 +39,7 @@
         "path": "http://www.stato-ontology.org"
     }],
     "resources": [{
-        "name": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example",
+        "name": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage",
         "title": "reporting treatment group mean and sem",
         "encoding":"utf-8",
         "profile": "tabular-data-resource",
@@ -104,7 +104,7 @@
             {
                 "name": "var2_levels",
                 "title": "levels for variable 2",
-                "description": "discrete levels of an independent variable",
+                "description": "discrete levels of another independent variable",
                 "format": "default",
                 "type": "string",
                 "rdfType": "http://purl.obolibrary.org/obo/STATO_0000265",
@@ -174,6 +174,7 @@
             }
         ]
         }
-    }],
-    "missingValues": ["-","NA"]
+    }]
+    ,
+    "missingValues": ["","-","NA"]
 }
