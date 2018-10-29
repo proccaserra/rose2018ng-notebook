@@ -35,6 +35,9 @@ vignettes/*.pdf
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
 
+#ipython notebook checkpoints
+.ipynb_checkpoints
+
 
 #housekeeping
 .DS_Store
