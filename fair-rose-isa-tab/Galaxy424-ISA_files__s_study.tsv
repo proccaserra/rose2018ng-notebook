@@ -1,0 +1,9 @@
+Source Name	Material Type	Term Source REF	Term Accession Number	Protocol REF	Parameter Value[run order]	Parameter Value[collection event rank]	Date	Performer	Sample Name	Characteristics[organism part]	Factor Value[genotype]	Factor Value[organism part]
+Group-001.Subject-001	specimen	OBI	0100051	sample collection	001	1	2018-07-02	Erin	Group-001.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. moscata	sepal
+Group-002.Subject-001	specimen	OBI	0100051	sample collection	002	1	2018-07-02	Erin	Group-002.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. chinensis __sq__Old Blush__sq__	sepal
+Group-003.Subject-001	specimen	OBI	0100051	sample collection	003	1	2018-07-02	Erin	Group-003.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. gallica	sepal
+Group-004.Subject-001	specimen	OBI	0100051	sample collection	004	1	2018-07-02	Erin	Group-004.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. damascena	sepal
+Group-005.Subject-001	specimen	OBI	0100051	sample collection	005	1	2018-07-02	Erin	Group-005.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. chinensis __sq__Old Blush__sq__	stamen
+Group-006.Subject-001	specimen	OBI	0100051	sample collection	006	1	2018-07-02	Erin	Group-006.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. wichurana	sepal
+Group-007.Subject-001	specimen	OBI	0100051	sample collection	007	1	2018-07-02	Erin	Group-007.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. gigantea	sepal
+Group-008.Subject-001	specimen	OBI	0100051	sample collection	008	1	2018-07-02	Erin	Group-008.Subject-001.user_defined_sample_type.1	user_defined_sample_type	R. chinensis __sq__Old Blush__sq__	petal
