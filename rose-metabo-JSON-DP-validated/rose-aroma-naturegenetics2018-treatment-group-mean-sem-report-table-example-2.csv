@@ -1,4 +1,4 @@
-﻿chemical_name,inchi,chebi_identifier,var1_levels,var1_uri,var2_levels,var2_uri,treatment,sample_size,sample_mean,unit,sem
+chemical_name,inchi,chebi_identifier,var1_levels,var1_uri,var2_levels,var2_uri,treatment,sample_size,sample_mean,unit,sem
 hexan-2-ol,"InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3",chebi:88370,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,sepal,http://purl.obolibrary.org/obo/PO_0009031,R. chinensis 'Old Blush' sepals,3,,,
 hexanal,"InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",chebi:88528,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,sepal,http://purl.obolibrary.org/obo/PO_0009031,R. chinensis 'Old Blush' sepals,3,4.95,,0.59
 (E)-2-hexenal,"InChI=1S/C6H10O/c1-2-3-4-5-6-7/h4-6H,2-3H2,1H3/b5-4+",chebi:28913,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,sepal,http://purl.obolibrary.org/obo/PO_0009031,R. chinensis 'Old Blush' sepals,3,57.62,,7.34

@@ -1,0 +1,179 @@
+{
+    "profile": "tabular-data-package",
+    "name": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example",
+    "title": "Metabolite Univariate Group Comparison 2 variables Data Package",
+    "homepage" : "https://github.com/proccaserra",
+    "version": "1.0",
+    "keywords": [
+        "metabolite",
+        "treatment",
+        "sample mean",
+        "standard error of the mean",
+        "STATO ontology",
+        "ISA format",
+        "EMBL-EBI Metabolights"
+    ],
+    "licenses": [{
+        "path": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "name": "CC0_1.0",
+        "version": "1.0",
+        "id": "CC0 1.0"
+    }],
+    "sources": [{
+        "title": "University of Oxford e-Research Centre",
+        "path": "http://oerc.ox.ac.uk"
+    }],
+    "contributors": [{
+        "title": "Philippe Rocca-Serra",
+        "email": "proccaserra@gmail.com",
+        "path": "http://www.stato-ontology.org"
+    }],
+    "maintainers": [{
+        "title": "Philippe Rocca-Serra",
+        "email": "proccaserra@gmail.com",
+        "path": "http://www.stato-ontology.org"
+    }],
+    "publishers": [{
+        "title": "Philippe Rocca-Serra",
+        "email": "proccaserra@gmail.com",
+        "path": "http://www.stato-ontology.org"
+    }],
+    "resources": [{
+        "name": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example",
+        "title": "reporting treatment group mean and sem",
+        "encoding":"utf-8",
+        "profile": "tabular-data-resource",
+        "path": "rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv",
+        "schema": {
+            "fields": [
+                {
+                "name": "chemical_name",
+                "title": "metabolite name",
+                "description": "the field Metabolite Identity is meant to hold information such a metabolite database identifier",
+                "format": "default",
+                "type": "string",
+                "rdfType": "",
+                "constraints": { "required": true }
+                },
+            {
+                "name": "inchi",
+                "title": "inchi string",
+                "description": "the field Metabolite Identity is meant to hold information such a metabolite database identifier",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://edamontology.org/format_1197",
+                "constraints": {
+                    "required": true,
+                    "pattern": "/^((InChI=)?[^J][0-9a-z+\\-\\(\\)\\\/,]+)$/ig"
+                }
+            },
+            {
+                "name": "chebi_identifier",
+                "title": "database identifier",
+                "description": "an identifier from chemical entity of biological interest database/ontology",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
+                "constraints": {
+                    "required": true,
+                    "pattern": "CHEBI:\\d+"
+                }
+            },
+            {
+                "name": "var1_levels",
+                "title": "levels for variable 1",
+                "description": "discrete levels of an independent variable",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://purl.obolibrary.org/obo/STATO_0000265",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "var1_uri",
+                "title": "a resolvable uri for the levels of variable #1",
+                "description": "a uri for a discrete level of an independent variable",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
+                "constraints": {
+                    "required": false
+                }
+            },
+            {
+                "name": "var2_levels",
+                "title": "levels for variable 2",
+                "description": "discrete levels of an independent variable",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://purl.obolibrary.org/obo/STATO_0000265",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "var2_uri",
+                "title": "a resolvable uri for the levels of variable #2",
+                "description": "a uri for a discrete level of an independent variable",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
+                "constraints": {
+                    "required": false
+                }
+            },
+            {
+                "name": "treatment",
+                "title": "factor level combination",
+                "description": "a treatment group defined as combination of independent variable factor levels",
+                "format": "default",
+                "type": "string",
+                "rdfType": "http://purl.obolibrary.org/obo/STATO_0000264",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "sample_size",
+                "title": "sample size",
+                "description": "statistical sample size is a count evaluating the number of individual experimental units in a treatment group",
+                "format": "default",
+                "type": "integer",
+                "rdfType": "http://purl.obolibrary.org/obo/STATO_0000088",
+                "constraints": {
+                    "required": false
+                }
+            },
+            {
+                "name": "sample_mean",
+                "title": "sample mean",
+                "description": "the sample mean is a measure of dispersion of the observations made on the sample and provides an unbias estimate of the population mean",
+                "format": "default",
+                "type": "number",
+                "rdfType": "http://purl.obolibrary.org/obo/STATO_0000401",
+                "constraints": {"required": true}
+            },
+            {
+                "name": "unit",
+                "title": "unit",
+                "description": "the unit associated with the sample mean",
+                "format": "default",
+                "type": "string",
+                "rdfType": "",
+                "constraints": {"required": false}
+            },
+            {
+                "name": "sem",
+                "title": "standard error of the mean",
+                "description": "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean's estimate of a population mean. It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample.",
+                "format": "default",
+                "type": "number",
+                "rdfType": "http://purl.obolibrary.org/obo/STATO_0000037",
+                "constraints": {"required": false}
+            }
+        ]
+        }
+    }],
+    "missingValues": ["-","NA"]
+}
