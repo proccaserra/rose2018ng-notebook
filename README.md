@@ -4,7 +4,10 @@ a repository for notebooks associated with Rose targeted metabolite profiling an
 
 # Specifying an R environment with a runtime.txt file
 
+_Experimental_ You may try running the notebooks using [Binder](https://mybinder.org/). If this route does not behave, the notebooks should be run in your local jupyter notebook installation
 Jupyter+R: [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-metabolites-analysis.ipynb)
+
+
 
 [IRKernel](https://irkernel.github.io/)
 is installed by default.
