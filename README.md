@@ -6,9 +6,9 @@ a repository for notebooks associated with Rose targeted metabolite profiling an
 
 _Experimental_ You may try running the notebooks using [Binder](https://mybinder.org/). If this route does not behave, the notebooks should be run in your local jupyter notebook installation
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-metabolites-analysis.ipynb)
+Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-metabolites-analysis.ipynb)
 
-Jupyter+Python+Sparql: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-rdf.ipynb)
+Jupyter+Python+Sparql: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-rdf.ipynb)
 
 [IRKernel](https://irkernel.github.io/)
 is installed by default.
