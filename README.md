@@ -8,13 +8,14 @@ _Experimental_ You may try running the notebooks using [Binder](https://mybinder
 
 Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-metabolites-analysis.ipynb)
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-rdf.ipynb)
+Jupyter+Python+Sparql: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=rose-rdf.ipynb)
 
 [IRKernel](https://irkernel.github.io/)
 is installed by default.
 
 
-# Setting up to be able to run SPARQL
+# If Jyputer running locally, you'll need to set a python sparql kernel[IRKernel](https://irkernel.github.io/)
+is installed by default. up to be able to run SPARQL
 
 (based on https://github.com/paulovn/sparql-kernel)
 
