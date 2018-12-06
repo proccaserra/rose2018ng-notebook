@@ -14,8 +14,9 @@ Jupyter+Python+Sparql: [![Binder](http://mybinder.org/badge_logo.svg)](http://be
 is installed by default.
 
 
-# If Jyputer running locally, you'll need to set a python sparql kernel[IRKernel](https://irkernel.github.io/)
-is installed by default. up to be able to run SPARQL
+# If running jupyter locally:
+
+You'll need to set a python sparql kernel  up to be able to run SPARQL
 
 (based on https://github.com/paulovn/sparql-kernel)
 
