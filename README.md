@@ -39,6 +39,8 @@ config, while the generic command will install it as a global kernel (but
 needs write permissions in the system directories).
 
 
-## running the rose-metabolites-analysis.ipynb requires an R kernel, which is install by default with the current set up  configuration
+## running the rose-metabolites-analysis.ipynb requires an R kernel
 
-[IRKernel](https://irknernel.github.io) is installe by default
+It is installed by default with the current set up  configuration
+
+[IRKernel](https://irknernel.github.io)
