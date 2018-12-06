@@ -1,25 +1,26 @@
-# rose2018ng-notebook
+# rose2018ng-notebooks
 
-a repository for notebooks associated with Rose targeted metabolite profiling analysis (nature genetics 2018)
+a repository for notebooks associated with the Rose targeted metabolite profiling analysis (nature genetics 2018)
 
-# Specifying an R environment with a runtime.txt file
+Two notebooks are available, each with specific requirements so we ease of use, we have looked into using the Binder infrastructure.
 
-_Experimental_ You may try running the notebooks using [Binder](https://mybinder.org/). If this route does not behave, the notebooks should be run in your local jupyter notebook installation
+_Experimental_ You may try running the notebooks using [Binder](https://mybinder.org/).
+
+Note that launching notebook with binder may take several minutes for the installation process to complete the first time around and depending on load on the infrastructure.
 
 Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-metabolites-analysis.ipynb)
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-metabolites-analysis.ipynb) Jupyter+R: rose-metabolites-analysis.ipynb
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-metabolites-analysis.ipynb) A Jupyter+R notebook: rose-metabolites-analysis.ipynb
 
 Jupyter+Python+Sparql: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-rdf.ipynb)
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-rdf.ipynb) Jupyter+Python+Sparql: rose-rdf.ipynb
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-rdf.ipynb) A Jupyter+Python+Sparql notebook: rose-rdf.ipynb
 
-
-[IRKernel](https://irkernel.github.io/)
-is installed by default.
-
+If the binder route does not behave, you may run the notebooks locally. See below for the instructions.
 
 # If running jupyter locally:
+
+## running the rose-rdf.ipynb requires a python sparql kernel
 
 You'll need to set a python sparql kernel  up to be able to run SPARQL
 
@@ -41,3 +42,7 @@ The ``--user`` option will install the kernel in the current user's personal
 config, while the generic command will install it as a global kernel (but
 needs write permissions in the system directories).
 
+
+## running the rose-metabolites-analysis.ipynb requires an R kernel, which is install by default with the current set up  configuration
+
+[IRKernel](https://irknernel.github.io) is installe by default
