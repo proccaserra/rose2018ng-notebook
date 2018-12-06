@@ -8,11 +8,7 @@ _Experimental_ You may try running the notebooks using [Binder](https://mybinder
 
 Note that launching notebook with binder may take several minutes for the installation process to complete the first time around and depending on load on the infrastructure.
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-metabolites-analysis.ipynb)
-
 [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-metabolites-analysis.ipynb) A Jupyter+R notebook: rose-metabolites-analysis.ipynb
-
-Jupyter+Python+Sparql: [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-rdf.ipynb)
 
 [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=rose-rdf.ipynb) A Jupyter+Python+Sparql notebook: rose-rdf.ipynb
 
