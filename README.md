@@ -30,7 +30,7 @@ The installation process requires two steps:
 
 2. Install the kernel into Jupyter::
 
-     jupyter sparqlkernel install [--user] [--logdir <dir> ]
+     jupyter sparqlkernel install [--user ] [--logdir  ]
 
 The ``--user`` option will install the kernel in the current user's personal
 config, while the generic command will install it as a global kernel (but
