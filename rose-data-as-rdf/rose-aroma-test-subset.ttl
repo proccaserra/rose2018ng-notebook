@@ -14,6 +14,19 @@
 @prefix ncbitax: <http://purl.obolibrary.org/obo/NCBITaxon_> .
 
 #\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+
+
+#<xyz123> a "chebi:24431". #'a chemical entity' 
+<xyz123> a "chebi:88528" ;
+  rdfs:label "hexan-2-ol"^^xsd:string;
+  ro:is_denoted_by "InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3"^^xsd:string .
+
+#<abc123> a "chebi:24431". #'a chemical entity' 
+<abc123> a "chebi:88370" ;
+  rdfs:label "(E,E)-farnesyl acetate"^^xsd:string;
+  ro:is_denoted_by "InChI=1S/C17H28O2/c1-14(2)8-6-9-15(3)10-7-11-16(4)12-13-19-17(5)18/h8,10,12H,6-7,9,11,13H2,1-5H3/b15-10+,16-12+"^^xsd:string .
+
+
 #/////////////////START_NEW_GROUP///////////////////
 <8be75a15-270b-4db9-8b6a-081658b7c785> a obi:0000070 ; #'assay'
  ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
@@ -43,7 +56,8 @@
     ro:is_about "chebi:88528";
     ro:located_in "po:0009031";
     ro:derives_from "ncbitax:74649";
-    ro:measured_in "R. chinensis 'Old Blush' sepals".
+    ro:measured_in <688e6e44-d28c-4bd4-846f-87b2f5a38160>.
+   # ro:measured_in "R. chinensis 'Old Blush' sepals".
 
 <0dfd936c-f97d-4eea-8653-4eb4591e043a> a obi:0000070 ; #'assay'
  ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
@@ -58,7 +72,9 @@
     ro:is_about "chebi:88528";
     ro:located_in "po:0009031";
     ro:derives_from "ncbitax:74649";
-    ro:measured_in "R. chinensis 'Old Blush' sepals".
+    ro:measured_in <688e6e44-d28c-4bd4-846f-87b2f5a38160>.
+
+#        ro:measured_in "R. chinensis 'Old Blush' sepals";
 
 <dd505a2c-79ca-4c2c-9ab7-7a53f30bbe43> a obi:0000671 ; # a biological specimen
  rdfs:label "sepal"^^xsd:string;
@@ -90,12 +106,12 @@
 <2c24ff54-4366-4f6e-a51f-820a0b47fabf> a stato:0000402;  # 'population mean'
   ro:is_about  "chebi:88370";
   stato:computed_over <688e6e44-d28c-4bd4-846f-87b2f5a38160>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 <3b52b0d4-5d76-4072-a75a-fbd811de80df> a stato:0000037;  #'standard error of the mean'
   ro:denotes <2c24ff54-4366-4f6e-a51f-820a0b47fabf>;
   stato:computed_over <688e6e44-d28c-4bd4-846f-87b2f5a38160>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 #\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
 #/////////////////START_NEW_GROUP///////////////////
@@ -174,12 +190,12 @@
 <9d59fea2-161d-4aaf-ab8b-9f46db89d945> a stato:0000402;  # 'population mean'
   ro:is_about  "chebi:88370";
   stato:computed_over <4633a758-fe63-486a-bb03-aaf01bbb11d1>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 <5b299cdc-d5ae-4361-ba4a-1561646ad148> a stato:0000037;  #'standard error of the mean'
   ro:denotes <9d59fea2-161d-4aaf-ab8b-9f46db89d945>;
   stato:computed_over <4633a758-fe63-486a-bb03-aaf01bbb11d1>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 #\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
 #/////////////////START_NEW_GROUP///////////////////
@@ -258,12 +274,12 @@
 <465fad7d-2437-4030-b9a8-98aeb7b57653> a stato:0000402;  # 'population mean'
   ro:is_about  "chebi:88370";
   stato:computed_over <7c7b9169-ff2f-40ac-96ad-b2743c344e44>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 <418a80be-4b9f-4d79-a848-8b70516df80c> a stato:0000037;  #'standard error of the mean'
   ro:denotes <465fad7d-2437-4030-b9a8-98aeb7b57653>;
   stato:computed_over <7c7b9169-ff2f-40ac-96ad-b2743c344e44>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 #\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
 #/////////////////START_NEW_GROUP///////////////////
@@ -342,12 +358,12 @@
 <21d48e26-3640-4f75-86c2-bb0185d26ad3> a stato:0000402;  # 'population mean'
   ro:is_about  "chebi:88370";
   stato:computed_over <1c2feb64-b54b-41af-be99-aa81ca1ebc31>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 <4c02a356-583a-4fc9-a178-4667d2151a57> a stato:0000037;  #'standard error of the mean'
   ro:denotes <21d48e26-3640-4f75-86c2-bb0185d26ad3>;
   stato:computed_over <1c2feb64-b54b-41af-be99-aa81ca1ebc31>;
-  ro:has_value "NA"^^xsd:string.
+  ro:has_value "0"^^xsd:decimal.
 
 #\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
 

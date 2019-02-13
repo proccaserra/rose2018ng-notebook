@@ -99,7 +99,8 @@ with open(tablefile) as csv_file:
                         'http://purl.obolibrary.org/obo/PO_', 'po:') + "\";\n"
                     rdf_fragment = rdf_fragment + "    ro:derives_from \"" + row[4].replace(
                         'http://purl.obolibrary.org/obo/NCBITaxon_', 'ncbitax:') + "\";\n"
-                    rdf_fragment = rdf_fragment + "    ro:measured_in \"" + row[7] + "\".\n"
+                    #rdf_fragment = rdf_fragment + "    ro:measured_in \"" + row[7] + "\".\n"
+                    rdf_fragment = rdf_fragment + "    ro:measured_in <" + pop_id + "> .\n\n"
 
                     # print(rdf_fragment + "\n")
                     saveAsttl.write(gc_ms_rdf_fragment + "\n")
@@ -124,14 +125,17 @@ with open(tablefile) as csv_file:
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
+
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                 elif row[9] == "" and row[2] != "":
                     print("neither this compound was not measured: ", row[0])
@@ -139,14 +143,16 @@ with open(tablefile) as csv_file:
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about  \"" + row[2] + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"                    
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"                    
 
                 elif row[9] != "" and row[2] == "":
                     print("THAT compound: ", row[0])
@@ -186,14 +192,16 @@ with open(tablefile) as csv_file:
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                 elif row[9] == "" and row[2] != "":
                     print("neither this compound was not measured: ", row[0])
@@ -201,14 +209,16 @@ with open(tablefile) as csv_file:
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about  \"" + row[2] + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
                     # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n"
+                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
+                    qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                 elif row[9] != "" and row[2] == "":
                     print("THAT compound: ", row[0])
