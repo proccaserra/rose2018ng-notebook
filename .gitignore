@@ -43,3 +43,4 @@ rsconnect/
 .DS_Store
 .gitignore
 *.*~
+.idea

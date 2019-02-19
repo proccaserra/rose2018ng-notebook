@@ -1,4 +1,4 @@
 jupyter sparqlkernel install
 
 # Notebooks w/ extensions that auto-run code must be "trusted" to work the first time
-jupyter trust rose-rdf.ipynb
+jupyter trust 	2-rose-metabolites-Python-RDF-querying-analysis.ipynb

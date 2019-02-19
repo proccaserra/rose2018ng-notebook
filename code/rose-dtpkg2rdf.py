@@ -1,20 +1,24 @@
-from rdflib import Graph, RDF
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
+
 import os
-import json
 import csv
 import uuid
-
+import requests
 
 cwd = os.getcwd()
-os.chdir('../fair-rose-metabo-JSON-DP-validated')
+os.chdir('../rose-data')
 
 jsonfile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json'
 # tablefile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
-tablefile = 'rose-aroma-2018-test.csv'
+# tablefile = 'rose-aroma-2018-subset.csv'
+# saveAsttl = open('../rose-data-as-rdf/rose-aroma-ng-06-2018-subset.ttl', 'w')
 
-saveAsttl = open('../fair-rose-metabo-profile-in-RDF/rose-aroma-test.ttl', 'w')
+tablefile = 'https://sandbox.zenodo.org/api/files/65bed921-e764-4418-8f20-077dab0e7a45/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
+# tablefile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
+saveAsttl = open('../rose-data-as-rdf/rose-aroma-ng-06-2018-full.ttl', 'w')
 
-header = "#-------------------------------------------------------------------------\n\
+header = "\n\
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\
@@ -28,32 +32,60 @@ header = "#---------------------------------------------------------------------
 @prefix po: <http://purl.obolibrary.org/obo/PO_> .\n\
 @prefix ro: <http://purl.obolibrary.org/obo/RO_> .\n\
 @prefix ncbitax: <http://purl.obolibrary.org/obo/NCBITaxon_> .\n\n"
-
 saveAsttl.write(header)
 
-# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
-# ontology: http://www.stato-ontology.org)
 
-with open(tablefile) as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
+def create_var_rep(fv_dict, factor_name):
+    ffv = []
+    counter = 0
+    f_id = str(uuid.uuid4())
+    f_rdf_fragment = "\n<" + f_id + "> a obi:0000750.   # 'study design independent variable'  same_as (OBI_0000750)\n"
+    f_rdf_fragment = f_rdf_fragment + "<" + f_id + "> a stato:0000087;  # 'categorical variable' (STATO_0000087)\n"
+    f_rdf_fragment = f_rdf_fragment + "  rdfs:label  \"" + factor_name + "\"^^xsd:string;\n"
+
+    fvs=[]
+    for key in fv_dict.keys():
+        fv_id = str(uuid.uuid4())
+        if counter < len(fv_dict.keys())-1:
+            f_rdf_fragment = f_rdf_fragment + "  ro:has_part <" + fv_id + ">  ;\n"
+            counter = counter + 1
+        else:
+            f_rdf_fragment = f_rdf_fragment + "  ro:has_part <" + fv_id + ">  .\n"
+
+        fv_rdf_fragment = "<" + fv_id + "> a stato:0000265 ; # a factor level\n"
+        fv_rdf_fragment = fv_rdf_fragment + "  rdfs:label \"" + key + "\"^^xsd:string ."
+        fvs.append(fv_rdf_fragment)
+
+    return f_rdf_fragment,fvs
+
+
+def process(a_csv_reader):
     line_count = 0
     treatments = {}
     idv1 = {}
     idv2 = {}
+    chemicals = {}
+    chem_frags = []
 
-    for row in csv_reader:
+    for row in a_csv_reader:
 
         if line_count == 0:
             print("header row: ", row)
             line_count += 1
         else:
-            # print(f'\t{row[0]} measured_in [organism part = {row[5]}] of [variety ={row[7]}] over [n= {row[8]}
-            # measurements] with [mean = {row[9]}] and [standard error of the mean {row[11]} ].')
-
 
             mean_id = str(uuid.uuid4())
             sem_id = str(uuid.uuid4())
+            
+            if row[2] not in chemicals.keys():
+                chemicals[row[2]] = 1
+                chem_id = str(uuid.uuid4())
+                chem_rdf_fragment = "<" + chem_id + "> a \"" + row[2] + "\" ; # a chemical\n"
+                chem_rdf_fragment = chem_rdf_fragment + "  rdfs:label \"" + row[0] + "\"^^xsd:string ;\n"
+                chem_rdf_fragment = chem_rdf_fragment + "  ro:is_denoted_by \"" + row[1] + "\"^^xsd:string .\n"
 
+                chem_frags.append(chem_rdf_fragment)
+                
             if row[3] not in idv1.keys():
                 idv1[row[3]] = 1
 
@@ -61,198 +93,161 @@ with open(tablefile) as csv_file:
                 idv2[row[5]] = 1
 
             if row[7] not in treatments.keys():
-                saveAsttl.write("#/////////////////START_NEW_GROUP///////////////////\n")
+                saveAsttl.write("#||-------A GROUP & its associated data ----------------------------------------||\n\n")
                 # let's create a new population for this new treatment group
                 pop_id = str(uuid.uuid4())
                 treatments[row[7]] = pop_id
                 pop_rdf_fragment = "<" + pop_id + "> a stato:0000193 ; # a population\n"
-                pop_rdf_fragment = pop_rdf_fragment + " rdfs:label \"" + row[7] + "\"^^xsd:string ;\n"
-                pop_rdf_fragment = pop_rdf_fragment + " ro:has_value \"" + row[7] + "\"^^xsd:string ;\n"
+                pop_rdf_fragment = pop_rdf_fragment + "  rdfs:label \"" + row[7] + "\"^^xsd:string ;\n"
+                pop_rdf_fragment = pop_rdf_fragment + "  ro:has_value \"" + row[7] + "\"^^xsd:string ;\n"
 
                 specimen_id = str(uuid.uuid4())
                 material_rdf_fragment = "<" + specimen_id + "> a obi:0000671 ; # a biological specimen\n"
-                material_rdf_fragment = material_rdf_fragment + " rdfs:label \"" + row[5] + "\"^^xsd:string;\n"
-                material_rdf_fragment = material_rdf_fragment + " ro:derives_from \"" + row[6].replace('http://purl.obolibrary.org/obo/PO_','po:') + "\";\n"
-                material_rdf_fragment = material_rdf_fragment + " ro:part_of \"" + row[4].replace('http://purl.obolibrary.org/obo/NCBITaxon_','ncbitax:') + "\".\n\n"
+                material_rdf_fragment = material_rdf_fragment + "  rdfs:label \"" + row[5] + "\"^^xsd:string;\n"
+                material_rdf_fragment = material_rdf_fragment + "  ro:derives_from \"" + row[6].replace('http://purl.obolibrary.org/obo/PO_','po:') + "\";\n"
+                material_rdf_fragment = material_rdf_fragment + "  ro:part_of \"" + row[4].replace('http://purl.obolibrary.org/obo/NCBITaxon_','ncbitax:') + "\".\n\n"
 
                 for i in range(int(row[8])):
                     chem_conc_id = str(uuid.uuid4())
                     gc_ms_id = str(uuid.uuid4())
                     gc_ms_rdf_fragment = "<" + gc_ms_id + "> a obi:0000070 ; #'assay'\n"
-                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + " ro:has_part \"msio:0000100\" ; #'targeted metabolite profiling'\n"
-                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + " ro:has_part \"chmo:0000497\" ; #'GC mass spectrometry'\n"
-                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + " ro:has_specified_input " + "<" + specimen_id + "> ;\n"
-                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + " ro:has_specified_output " + "<" + chem_conc_id + "> .\n"
-
-                    # print(gc_ms_rdf_fragment + "\n")
+                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + "  ro:has_part \"msio:0000100\" ; #'targeted metabolite profiling'\n"
+                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + "  ro:has_part \"chmo:0000497\" ; #'GC mass spectrometry'\n"
+                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + "  ro:has_specified_input " + "<" + specimen_id + "> ;\n"
+                    gc_ms_rdf_fragment = gc_ms_rdf_fragment + "  ro:has_specified_output " + "<" + chem_conc_id + "> .\n"
 
                     rdf_fragment = "<" + chem_conc_id + "> a obi:0000751 .	#'dependent variable'\n"
                     rdf_fragment = rdf_fragment + "<" + chem_conc_id + "> a stato:0000251. #'continuous variable'\n"
                     rdf_fragment = rdf_fragment + "<" + chem_conc_id + "> a stato:0000072 ;	#'substance concentration'\n"
-                    rdf_fragment = rdf_fragment + "    ro:is_specified_output_of " + "<" + gc_ms_id + "> ;\n"
+                    rdf_fragment = rdf_fragment + "  ro:is_specified_output_of " + "<" + gc_ms_id + "> ;\n"
                     if row[2] == "":
-                        rdf_fragment = rdf_fragment + "    ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
+                        rdf_fragment = rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     else:
-                        rdf_fragment = rdf_fragment + "    ro:is_about \"" + row[2] + "\";\n"
+                        rdf_fragment = rdf_fragment + "  ro:is_about \"" + row[2] + "\";\n"
 
-                    rdf_fragment = rdf_fragment + "    ro:located_in \"" + row[6].replace(
+                    rdf_fragment = rdf_fragment + "  ro:located_in \"" + row[6].replace(
                         'http://purl.obolibrary.org/obo/PO_', 'po:') + "\";\n"
-                    rdf_fragment = rdf_fragment + "    ro:derives_from \"" + row[4].replace(
+                    rdf_fragment = rdf_fragment + "  ro:derives_from \"" + row[4].replace(
                         'http://purl.obolibrary.org/obo/NCBITaxon_', 'ncbitax:') + "\";\n"
                     #rdf_fragment = rdf_fragment + "    ro:measured_in \"" + row[7] + "\".\n"
-                    rdf_fragment = rdf_fragment + "    ro:measured_in <" + pop_id + "> .\n\n"
+                    rdf_fragment = rdf_fragment + "  ro:measured_in <" + pop_id + "> .\n"
 
-                    # print(rdf_fragment + "\n")
                     saveAsttl.write(gc_ms_rdf_fragment + "\n")
                     saveAsttl.write(rdf_fragment + "\n")
 
                     if i < int(row[8])-1:
-                        pop_rdf_fragment = pop_rdf_fragment + " ro:has_member <" + gc_ms_id + "> ;\n"
+                        pop_rdf_fragment = pop_rdf_fragment + "  ro:has_member <" + gc_ms_id + "> ;\n"
                     else:
-                        pop_rdf_fragment = pop_rdf_fragment + " ro:has_member <" + gc_ms_id + "> .\n\n"
+                        pop_rdf_fragment = pop_rdf_fragment + "  ro:has_member <" + gc_ms_id + "> .\n\n"
 
                 pop_size_id = str(uuid.uuid4())
                 pop_size_rdf_fragment = "<" + pop_size_id + "> a stato:0000088 ; # a population size\n"
-                pop_size_rdf_fragment = pop_size_rdf_fragment + " ro:has_value \"3\"^^xsd:integer ;\n"
-                pop_size_rdf_fragment = pop_size_rdf_fragment + " ro:is_about <" + pop_id + "> .\n\n"
+                pop_size_rdf_fragment = pop_size_rdf_fragment + "  ro:has_value \"3\"^^xsd:integer ;\n"
+                pop_size_rdf_fragment = pop_size_rdf_fragment + "  ro:is_about <" + pop_id + "> .\n\n"
 
                 saveAsttl.write(material_rdf_fragment)
                 saveAsttl.write(pop_rdf_fragment)
                 saveAsttl.write(pop_size_rdf_fragment)
 
                 if row[9] == "" and row[2] == "":
-                    print("THIS compound was not measured: ", row[0])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
-
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                 elif row[9] == "" and row[2] != "":
-                    print("neither this compound was not measured: ", row[0])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about  \"" + row[2] + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"                    
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"                    
 
                 elif row[9] != "" and row[2] == "":
-                    print("THAT compound: ", row[0])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[9] + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037; # 'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[11] + "\"^^xsd:decimal.\n"
 
                 elif row[9] != "" and row[2] != "":
-                    print("row2-chebi id:", row[2])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" +chem_conc_id + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about  \"" + row[2] + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[9] + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037; # 'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[11] + "\"^^xsd:decimal.\n"
 
                 saveAsttl.write(qt_rdf_fragment + "\n")
-                # print(qt_rdf_fragment + "\n")
+
             else:
                 if row[9] == "" and row[2] == "":
-                    print("THIS compound was not measured: ", row[0])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                 elif row[9] == "" and row[2] != "":
-                    print("neither this compound was not measured: ", row[0])
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about  \"" + row[2] + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037;  #'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
-                    #qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "NA" + "\"^^xsd:string.\n\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + "0" + "\"^^xsd:decimal.\n\n"
 
                 elif row[9] != "" and row[2] == "":
-                    print("THAT compound: ", row[0])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[0] + "\"^^xsd:string;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[9] + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037; # 'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\"^^xsd:string;\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[11] + "\"^^xsd:decimal.\n"
 
                 else:
-                    print("row2-chebi id:", row[2])
+
                     qt_rdf_fragment = "<" + mean_id + "> a stato:0000402;  # 'population mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" +chem_conc_id + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + row[2] + "\";\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[9] + "\"^^xsd:decimal.\n\n"
 
                     qt_rdf_fragment = qt_rdf_fragment + "<" + sem_id + "> a stato:0000037; # 'standard error of the mean'\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about \"" + chem_conc_id + "\";\n"
-                    # qt_rdf_fragment = qt_rdf_fragment + "  ro:is_about <" + chem_conc_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:denotes <" + mean_id + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  stato:computed_over <" + treatments[row[7]] + ">;\n"
                     qt_rdf_fragment = qt_rdf_fragment + "  ro:has_value \"" + row[11] + "\"^^xsd:decimal.\n"
 
                 saveAsttl.write(qt_rdf_fragment + "\n")
-                # print(qt_rdf_fragment + "\n")
-
 
             # we assume technical replicates based on the information extracted from the manuscript
             # if int(row[8]) > 0:
@@ -293,64 +288,34 @@ with open(tablefile) as csv_file:
             #
             line_count += 1
 
-        saveAsttl.write("#\\\\\\\\\\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\\\\\\\\\\\n")
-    idv1_rdf_fragment = "\n<var1> a obi:0000750.  # 'study design independent variable'  same_as (OBI_0000750)\n"
-    idv1_rdf_fragment = idv1_rdf_fragment + "<var1> a stato:0000087;  # 'categorical variable' (STATO_0000087)\n"
-    idv1_rdf_fragment = idv1_rdf_fragment + "   rdfs:label  \"genotype\"^^xsd:string;\n"
-    count = 0
-
-    idv1_fvs = []
-
-    for key in idv1.keys():
-        idv1_fv_id = str(uuid.uuid4())
-        idv1_fv_rdf_fragment = "<" + idv1_fv_id + "> a stato:0000265 ; # a factor level\n"
-        idv1_fv_rdf_fragment = idv1_fv_rdf_fragment + " rdfs:label \"" + key + "\"^^xsd:string ."
-        # saveAsttl.write(idv1_fv_rdf_fragment + "\n")
-
-        if count < len(idv1.keys())-1:
-            idv1_rdf_fragment = idv1_rdf_fragment + "   ro:has_part <" + idv1_fv_id + "> ;\n"
-
-            count = count + 1
-        else:
-            idv1_rdf_fragment = idv1_rdf_fragment + "   ro:has_part <" + idv1_fv_id + "> .\n"
-
-            count = count + 1
-
-        idv1_fvs.append(idv1_fv_rdf_fragment)
-
-    idv2_fvs = []
-    idv2_rdf_fragment = "\n<var2> a obi:0000750.   # 'study design independent variable'  same_as (OBI_0000750)\n"
-    idv2_rdf_fragment = idv2_rdf_fragment + "<var2> a stato:0000087;  # 'categorical variable' (STATO_0000087)\n"
-    idv2_rdf_fragment = idv2_rdf_fragment + "   rdfs:label  \"organism part\"^^xsd:string;\n"
-    counter = 0
-
-    for key2 in idv2.keys():
-        idv2_fv_id = str(uuid.uuid4())
-        idv2_fv_rdf_fragment = "<" + idv2_fv_id + "> a stato:0000265 ; # a factor level\n"
-        idv2_fv_rdf_fragment = idv2_fv_rdf_fragment + " rdfs:label \"" + key2 + "\"^^xsd:string ."
-        # saveAsttl.write(idv2_fv_rdf_fragment + "\n")
-
-        if counter < len(idv2.keys())-1:
-            # idv2_fv_rdf_fragment = idv2_fv_rdf_fragment + " ro:has_value \"" + key2 + "\"^^xsd:string .\n"
-            idv2_rdf_fragment = idv2_rdf_fragment + "   ro:has_part <" + idv2_fv_id + ">  ;\n"
-
-            counter = counter + 1
-        else:
-            idv2_rdf_fragment = idv2_rdf_fragment + "   ro:has_part <" + idv2_fv_id + ">  .\n"
-
-            # counter = counter + 1
-        idv2_fvs.append(idv2_fv_rdf_fragment)
-
     saveAsttl.write("\n# ************ declaration of independent variables and their levels *************\n")
-    saveAsttl.write("\n" + idv1_rdf_fragment + "\n")
+
+    idv1_f,idv1_fvs = create_var_rep(idv1, "genotype")
+    saveAsttl.write(str(idv1_f) + "\n")
     i = 0
     for i in range(len(idv1_fvs)):
         saveAsttl.write(idv1_fvs[i]+"\n")
 
-    saveAsttl.write("\n" + idv2_rdf_fragment + "\n")
+    idv2_f,idv2_fvs = create_var_rep(idv2, "organism part")
+    saveAsttl.write(str(idv2_f) + "\n")
     j = 0
     for j in range(len(idv2_fvs)):
         saveAsttl.write(idv2_fvs[j]+"\n")
 
+    saveAsttl.write("\n# ************ Listing all chemicals found *************\n\n")
+    for element in chem_frags:
+        saveAsttl.write(element+"\n")
+
     print(f'Processed {line_count} lines.')
+
+
+if tablefile.startswith("http"):
+    with requests.get(tablefile, stream=True) as r:
+        f = (line.decode('utf-8') for line in r.iter_lines())
+        csv_reader = csv.reader(f, delimiter=',', quotechar='"')
+        process(csv_reader)
+else:
+    with open(tablefile) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        process(csv_reader)
 

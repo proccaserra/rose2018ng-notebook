@@ -1,0 +1,481 @@
+chemical_name	inchi	chebi_identifier	var1_levels	var1_uri	var2_levels	var2_uri	treatment	sample_size	sample_mean	unit	sem
+hexan-2-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+hexanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	4.948484238934703		0.5880575957957191
+(E)-2-hexenal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	57.615979379973986		7.341720665289983
+(Z)-3-hexen-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	7.639427405845331		0.631271338559417
+(E)-2-hexen-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	1.7886568417878266		0.9769507672859266
+hexan-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+nonane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	2.0949343287533924		0.07026160214817594
+alpha-pinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+benzaldehyde			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+beta-myrcene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(Z)-3-hexenyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	7.0955030529971195		1.1585442753928357
+hexyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E)-hexenyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(+/-)-limonene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+benzylalcohol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+phenylacetaldehyde			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E)-beta-ocimene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(+/-)-linalool			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+nonanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	9.26324865238161		1.1909865698261175
+2-phenylethanol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(+/-)-beta-citronellal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(+/-)-alpha-terpineol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+decanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	5.41780827921545		3.3805023859387386
+nerol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(+/-)-beta-citronellol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+neral			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+geraniol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+beta-phenylethyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+3,5-dimethoxytoluene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+geranial			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+undecanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	9.647179157756607		0.7585552554960273
+theaspirane A			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(+/-)-beta-citronellyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+eugenol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+neryl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+alpha-copaene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+geranyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+beta-elemene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	1.4648625642220174		0.8656495065325406
+methyl eugenol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E)-beta-caryophyllene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+1,3,5-trimethoxybenzene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	11.365237458613473		1.5924931186905402
+dihydro-beta-ionone			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+alpha guaiene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	1.4578491837686365		0.7648752408584679
+dihydro-beta-ionol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E)-beta-farnesene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+germacrene D			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+pentadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E,E)-alpha-farnesene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+gamma-cadinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+delta-cadinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+elemol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+Germacrene D 4 ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+hexadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+Tau-cadinol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+beta-eudesmol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+alpha-cadinol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3	1.0408457099244484		0.5245748441491555
+heptadecene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+heptadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E,E)-farnesol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+(E,E)-farnesal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	sepals	http://purl.obolibrary.org/obo/PO_0009031	R. chinensis 'Old Blush' sepals	3			
+hexan-2-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+hexanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	0.8974993624930331		0.4550959134897428
+(E)-2-hexenal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	9.412580819292012		1.2302702783303814
+(Z)-3-hexen-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	5.39481258576588		1.5140676764360734
+(E)-2-hexen-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+hexan-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+nonane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+alpha-pinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+benzaldehyde			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+beta-myrcene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(Z)-3-hexenyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	45.92066606296144		5.226135780924083
+hexyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(E)-hexenyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	2.0204581299718805		1.0488813674530426
+(+/-)-limonene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+benzylalcohol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+phenylacetaldehyde			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(E)-beta-ocimene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(+/-)-linalool			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	0.29236099875387817		0.29236099875387817
+nonanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+2-phenylethanol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	0.25619300959806407		0.2561930095980641
+(+/-)-beta-citronellal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(+/-)-alpha-terpineol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+decanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+nerol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(+/-)-beta-citronellol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	1.2326254607711273		1.2326254607711271
+neral			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+geraniol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	8.867332885422217		0.693995473262053
+beta-phenylethyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+3,5-dimethoxytoluene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+geranial			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	3.457247887974145		0.3554735784371512
+undecanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+theaspirane A			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(+/-)-beta-citronellyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+eugenol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+neryl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+alpha-copaene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	1.1315135005041554		0.3183985760581448
+geranyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	0.216300244623242		0.21630024462324168
+beta-elemene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	0.28811029849232045		0.2881102984923205
+methyl eugenol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(E)-beta-caryophyllene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+1,3,5-trimethoxybenzene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	165.11525405359072		14.102217293796008
+dihydro-beta-ionone			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	1.5126240978628551		0.2403340718596389
+alpha guaiene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+dihydro-beta-ionol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	35.834804229712795		3.4195197946049087
+(E)-beta-farnesene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+germacrene D			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	57.502393299209736		5.031003624542568
+pentadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(E,E)-alpha-farnesene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+gamma-cadinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+delta-cadinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	6.144741926976341		0.8218403753316005
+elemol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+Germacrene D 4 ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	1.3203148277460242		0.21791845416753025
+hexadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+Tau-cadinol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	3.447267712789358		0.23073202403008605
+beta-eudesmol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+alpha-cadinol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	1.4699484508781004		0.1138507685972014
+heptadecene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	2.34812359656675		0.13602685416679616
+heptadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3	3.18779608656436		0.03322411793266652
+(E,E)-farnesol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+(E,E)-farnesal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	stamens	http://purl.obolibrary.org/obo/PO_0009029	R. chinensis 'Old Blush' stamens	3			
+hexan-2-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+hexanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	1.593419332073756		0.22003616020659034
+(E)-2-hexenal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	28.26113328971879		4.934526593791378
+(Z)-3-hexen-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	15.148866217404871		2.257691382397605
+(E)-2-hexen-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	6.118078958132884		0.8775084325087272
+hexan-1-ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	3.1153870855129084		0.3782242670210537
+nonane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+alpha-pinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+benzaldehyde			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+beta-myrcene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	1.0536071434415701		0.24636104535630254
+(Z)-3-hexenyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	32.34480685243641		5.969411654149159
+hexyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.7314430431068715		0.10914707728880173
+(E)-hexenyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.9667494042475623		0.24947199386976346
+(+/-)-limonene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+benzylalcohol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+phenylacetaldehyde			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(E)-beta-ocimene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(+/-)-linalool			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+nonanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.2578744307538468		0.2578744307538468
+2-phenylethanol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(+/-)-beta-citronellal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.25898221834101676		0.2589822183410168
+(+/-)-alpha-terpineol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+decanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+nerol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(+/-)-beta-citronellol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.9739177780414149		0.9739176613271596
+neral			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.6777740241652271		0.6777740241652273
+geraniol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	89.73454623907936		5.896580957569393
+beta-phenylethyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+3,5-dimethoxytoluene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+geranial			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	28.33769102778149		4.14466144839694
+undecanal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+theaspirane A			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(+/-)-beta-citronellyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+eugenol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+neryl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+alpha-copaene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+geranyl acetate			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	2.598157890408684		1.4876662699543255
+beta-elemene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.27346324089036916		0.2734632408903692
+methyl eugenol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(E)-beta-caryophyllene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+1,3,5-trimethoxybenzene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	19.660470747505556		4.884737498793297
+dihydro-beta-ionone			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+alpha guaiene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+dihydro-beta-ionol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	11.049614228120426		0.6221953129340435
+(E)-beta-farnesene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+germacrene D			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	9.256702431604877		2.7634563940388435
+pentadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+(E,E)-alpha-farnesene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+gamma-cadinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.2172337127179431		0.2172337127179431
+delta-cadinene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	1.2551622533599212		0.4829448699749691
+elemol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+Germacrene D 4 ol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.6577763920758426		0.6577763132479545
+hexadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+Tau-cadinol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.4073725657443646		0.4073725657443647
+beta-eudesmol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+alpha-cadinol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.6839894009455653		0.1389516106370547
+heptadecene			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+heptadecane			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.2881038982490534		0.15149929495998984
+(E,E)-farnesol			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3	0.43119332808631344		0.4087956105089334
+(E,E)-farnesal			R. chinensis 'Old Blush'	http://purl.obolibrary.org/obo/NCBITaxon_74649	petals	http://purl.obolibrary.org/obo/PO_0009032	R. chinensis 'Old Blush' petals	3			
+hexan-2-ol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+hexanal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	0.647443821619181		0.02866126047347691
+(E)-2-hexenal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	1.3525961366849846		0.16665372555717847
+(Z)-3-hexen-1-ol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(E)-2-hexen-1-ol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+hexan-1-ol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+nonane			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	0.47719156732595697		0.26668853644003465
+alpha-pinene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+benzaldehyde			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+beta-myrcene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(Z)-3-hexenyl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+hexyl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(E)-hexenyl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(+/-)-limonene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+benzylalcohol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+phenylacetaldehyde			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(E)-beta-ocimene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(+/-)-linalool			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+nonanal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	0.928444385423834		0.5366845295699567
+2-phenylethanol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(+/-)-beta-citronellal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(+/-)-alpha-terpineol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+decanal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	2.3829684586066913		1.4085627099007991
+nerol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(+/-)-beta-citronellol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+neral			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+geraniol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+beta-phenylethyl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+3,5-dimethoxytoluene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	6.669296787478508		0.2613141235972916
+geranial			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+undecanal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+theaspirane A			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	0.9521066430884081		0.07276632555365309
+(+/-)-beta-citronellyl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+eugenol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	20.654442174480653		5.918867198460259
+neryl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+alpha-copaene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+geranyl acetate			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+beta-elemene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+methyl eugenol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	3.0967832503708093		0.9308098201253834
+(E)-beta-caryophyllene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	0.47872219657577486		0.4787221392057322
+1,3,5-trimethoxybenzene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+dihydro-beta-ionone			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	4.008207453950502		0.08880503609298633
+alpha guaiene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+dihydro-beta-ionol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	15.362866869101547		4.245653128785565
+(E)-beta-farnesene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+germacrene D			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	2.107651345903768		0.5030633467034732
+pentadecane			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(E,E)-alpha-farnesene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+gamma-cadinene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+delta-cadinene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+elemol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+Germacrene D 4 ol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+hexadecane			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	14.017910641428308		4.984127468978191
+Tau-cadinol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+beta-eudesmol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+alpha-cadinol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	0.28348791359559183		0.2834878796224153
+heptadecene			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	14.273872708172604		0.4444643708289608
+heptadecane			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3	17.2320551523754		3.461044542217341
+(E,E)-farnesol			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+(E,E)-farnesal			R. gigantea	http://purl.obolibrary.org/obo/NCBITaxon_74650	petals	http://purl.obolibrary.org/obo/PO_0009032	R. gigantea petals	3			
+hexan-2-ol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.4908285392016379		0.24541612158424256
+hexanal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(E)-2-hexenal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.22346642071145498		0.22346639393125087
+(Z)-3-hexen-1-ol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(E)-2-hexen-1-ol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+hexan-1-ol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+nonane			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+alpha-pinene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.6519600083579745		0.6519599302271216
+benzaldehyde			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	3.189644672127407		0.8404628891929492
+beta-myrcene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	5.634890181859621		1.5075083622893437
+(Z)-3-hexenyl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+hexyl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(E)-hexenyl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(+/-)-limonene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.16024799496380093		0.1602479757596897
+benzylalcohol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	22.858223396962426		1.4953861656923753
+phenylacetaldehyde			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(E)-beta-ocimene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	3.280693589587024		0.5564008817434309
+(+/-)-linalool			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+nonanal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+2-phenylethanol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	1029.169386420641		62.24212333232528
+(+/-)-beta-citronellal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	3.6978443203126123		0.21029603118277032
+(+/-)-alpha-terpineol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+decanal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+nerol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	47.5143276099285		15.179058569341958
+(+/-)-beta-citronellol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	102.67616874373464		6.7452674068932685
+neral			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	17.36327291770996		2.2131450008818714
+geraniol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	142.8998969344534		32.68575080622683
+beta-phenylethyl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	3.0597859918738823		1.6252685009972796
+3,5-dimethoxytoluene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+geranial			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	41.18562894684259		4.363502444562156
+undecanal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+theaspirane A			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(+/-)-beta-citronellyl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	1.431953389452098		0.21723815300065968
+eugenol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	4.008480453354042		1.4204523645064004
+neryl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+alpha-copaene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+geranyl acetate			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	8.160359434635849		1.0768007143154272
+beta-elemene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+methyl eugenol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	2.2872777903850143		1.2947279268405318
+(E)-beta-caryophyllene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+1,3,5-trimethoxybenzene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+dihydro-beta-ionone			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+alpha guaiene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+dihydro-beta-ionol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+(E)-beta-farnesene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.39982298508241043		0.39982293716764505
+germacrene D			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.3378683251988803		0.3378683251988803
+pentadecane			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	1.5534774553501138		0.15584960972466688
+(E,E)-alpha-farnesene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	3.2564268238996856		2.6456311476087833
+gamma-cadinene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+delta-cadinene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+elemol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	2.9765993705001286		0.819678785753278
+Germacrene D 4 ol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+hexadecane			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.6490450789498662		0.6490450789498661
+Tau-cadinol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+beta-eudesmol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+alpha-cadinol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3			
+heptadecene			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	4.431706862034778		0.7475342997556411
+heptadecane			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	42.45114973672929		0.09458141633420346
+(E,E)-farnesol			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	8.117331134955936		1.5473070170728458
+(E,E)-farnesal			R. Damascena	http://purl.obolibrary.org/obo/NCBITaxon_3765	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Damascena petals	3	0.5882929088826391		0.5882928383816479
+hexan-2-ol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+hexanal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E)-2-hexenal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(Z)-3-hexen-1-ol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E)-2-hexen-1-ol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+hexan-1-ol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+nonane			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+alpha-pinene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	1.0114439154511812		0.11452830632508515
+benzaldehyde			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+beta-myrcene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	6.827749026018551		0.1972301980671933
+(Z)-3-hexenyl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+hexyl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E)-hexenyl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(+/-)-limonene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+benzylalcohol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	17.207356323833817		0.615058708080175
+phenylacetaldehyde			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E)-beta-ocimene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	1.9837565665276689		0.08257166439773872
+(+/-)-linalool			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	1.0771816066275528		0.06981683028957769
+nonanal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+2-phenylethanol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	593.3707370111994		27.062345859286737
+(+/-)-beta-citronellal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(+/-)-alpha-terpineol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+decanal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+nerol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	41.8446522419924		5.243518544216295
+(+/-)-beta-citronellol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	17.48281510356176		1.1665201120640023
+neral			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	1.9164172276843319		0.2585852255616296
+geraniol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	118.00998884515268		7.215042391955863
+beta-phenylethyl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+3,5-dimethoxytoluene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+geranial			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	7.514351337460089		0.7798026671551469
+undecanal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+theaspirane A			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(+/-)-beta-citronellyl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	0.018873091482215224		0.018873089220464944
+eugenol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+neryl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	0.052537823283752484		0.000812399921584192
+alpha-copaene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+geranyl acetate			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	5.521152493826105		0.5724785787148261
+beta-elemene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+methyl eugenol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E)-beta-caryophyllene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	1.1963953158509415		0.6046288655840486
+1,3,5-trimethoxybenzene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+dihydro-beta-ionone			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+alpha guaiene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+dihydro-beta-ionol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E)-beta-farnesene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	0.057963098660005714		0.0008359592999617981
+germacrene D			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+pentadecane			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+(E,E)-alpha-farnesene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	0.038130946886610735		0.019068382808351717
+gamma-cadinene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+delta-cadinene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+elemol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	16.890433482254156		1.7336434077733618
+Germacrene D 4 ol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+hexadecane			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+Tau-cadinol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+beta-eudesmol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	3.989982597299631		0.5090014670403479
+alpha-cadinol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+heptadecene			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	4.19644867249966		0.6275333108403333
+heptadecane			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	25.232034419916232		2.464224697868452
+(E,E)-farnesol			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3	0.038130946886610735		0.019068382808351717
+(E,E)-farnesal			R. Gallica	http://purl.obolibrary.org/obo/NCBITaxon_74632	petals	http://purl.obolibrary.org/obo/PO_0009032	R. Gallica petals	3			
+hexan-2-ol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+hexanal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E)-2-hexenal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(Z)-3-hexen-1-ol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E)-2-hexen-1-ol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+hexan-1-ol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+nonane			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+alpha-pinene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+benzaldehyde			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+beta-myrcene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	3.08		0.28
+(Z)-3-hexenyl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+hexyl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E)-hexenyl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(+/-)-limonene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+benzylalcohol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+phenylacetaldehyde			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E)-beta-ocimene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(+/-)-linalool			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+nonanal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+2-phenylethanol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	186.9		41.09
+(+/-)-beta-citronellal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(+/-)-alpha-terpineol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+decanal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+nerol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(+/-)-beta-citronellol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+neral			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+geraniol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	34.19		6.84
+beta-phenylethyl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+3,5-dimethoxytoluene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+geranial			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	0.8		0.75
+undecanal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+theaspirane A			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(+/-)-beta-citronellyl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+eugenol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	73.87		12.83
+neryl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+alpha-copaene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+geranyl acetate			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+beta-elemene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+methyl eugenol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E)-beta-caryophyllene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+1,3,5-trimethoxybenzene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+dihydro-beta-ionone			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+alpha guaiene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+dihydro-beta-ionol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E)-beta-farnesene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+germacrene D			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+pentadecane			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E,E)-alpha-farnesene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+gamma-cadinene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+delta-cadinene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+elemol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+Germacrene D 4 ol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+hexadecane			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	 		
+Tau-cadinol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+beta-eudesmol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+alpha-cadinol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+heptadecene			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	1.243110755167299		0.6291804407568796
+heptadecane			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3	3.03		0.27
+(E,E)-farnesol			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+(E,E)-farnesal			R. moschata	http://purl.obolibrary.org/obo/NCBITaxon_74646	petals	http://purl.obolibrary.org/obo/PO_0009032	R. moschata petals	3			
+hexan-2-ol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.0355416700727114		0.035541670072711404
+hexanal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.17802622100419926		0.08974315127708203
+(E)-2-hexenal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	1.1843059374213114		0.05524619173269138
+(Z)-3-hexen-1-ol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	1.652015862964137		0.04135940322129255
+(E)-2-hexen-1-ol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+hexan-1-ol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+nonane			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+alpha-pinene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+benzaldehyde			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+beta-myrcene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(Z)-3-hexenyl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+hexyl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(E)-hexenyl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.19932152024853286		0.018771661180635488
+(+/-)-limonene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+benzylalcohol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+phenylacetaldehyde			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.4068303465355798		0.033665740297427346
+(E)-beta-ocimene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(+/-)-linalool			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+nonanal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+2-phenylethanol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	109.94225665562867		5.320585297344965
+(+/-)-beta-citronellal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(+/-)-alpha-terpineol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+decanal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+nerol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(+/-)-beta-citronellol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+neral			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+geraniol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+beta-phenylethyl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.8170081177570733		0.04080333056056788
+3,5-dimethoxytoluene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+geranial			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+undecanal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+theaspirane A			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(+/-)-beta-citronellyl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+eugenol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+neryl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+alpha-copaene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+geranyl acetate			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.35688267262246604		0.03491100538334673
+beta-elemene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+methyl eugenol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(E)-beta-caryophyllene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.4484093221609671		0.059337734133929385
+1,3,5-trimethoxybenzene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+dihydro-beta-ionone			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.07697657522239669		0.0769765752223967
+alpha guaiene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+dihydro-beta-ionol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.6775433219238366		0.05959650464319612
+(E)-beta-farnesene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	1.372417064166892		0.05066457911522111
+germacrene D			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+pentadecane			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+(E,E)-alpha-farnesene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.5814002083588967		0.06093161274282286
+gamma-cadinene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+delta-cadinene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+elemol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+Germacrene D 4 ol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+hexadecane			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+Tau-cadinol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+beta-eudesmol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+alpha-cadinol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+heptadecene			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3			
+heptadecane			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.5647177521834144		0.030711029578944976
+(E,E)-farnesol			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	7.468848509534273		0.5004832857868661
+(E,E)-farnesal			R. wichurana	http://purl.obolibrary.org/obo/NCBITaxon_2094184	petals	http://purl.obolibrary.org/obo/PO_0009032	R. wichurana petals	3	0.62045234777788		0.050643476497478766
