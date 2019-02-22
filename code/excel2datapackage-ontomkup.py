@@ -5,6 +5,8 @@ import os
 import libchebipy
 import re
 import pandas as pd
+from datapackage import Package
+from goodtables import validate
 
 try:
     cwd = os.getcwd()
@@ -25,6 +27,11 @@ except IOError as e:
 # Moving to the 'processed' directory, where we'll write the results on the raw data transformations
 try:
     os.chdir('../processed')
+except IOError as e:
+    print(e)
+
+try:
+    cwd = os.getcwd()
 except IOError as e:
     print(e)
 
@@ -81,8 +88,8 @@ for i in range(0, 60):
         data_slice.loc[i, 'inchi'] = ''
         data_slice.loc[i, 'chebi_identifier'] = ''
 
-# Here, we simply remove the index field from the dataframe as we don't want it in the final output
-data_slice.drop([0], inplace=True)
+#  Here, we drop the first row
+# data_slice.drop([0], inplace=True)
 
 # We may wish to print intermediate results:
 # data_slice.to_csv("slice.txt", sep='\t', encoding='utf-8', index=False)
@@ -190,8 +197,30 @@ long_df_from_file.to_csv("rose-aroma-naturegenetics2018-treatment-group-mean-sem
                          quoting=1,
                          doublequote=True, sep=',',
                          encoding='utf-8', index=False)
+
 try:
     os.remove("long.txt")
+except IOError as e:
+    print(e)
+
+
+# validating the output against JSON data package specifications
+# Getting the JSON Tabular DataPackage Definition from the store:
+
+package_definition = '../../rose-metabo-JSON-DP-validated/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json'
+file_to_test = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
+
+try:
+    pack = Package(package_definition)
+    pack.valid
+    pack.errors
+    for e in pack.errors:
+        print(e)
+    print(pack.profile.name)
+
+    report = validate(file_to_test)
+    print(report['valid'])
+
 except IOError as e:
     print(e)
 

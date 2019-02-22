@@ -43,7 +43,7 @@ def create_var_rep(fv_dict, factor_name):
     f_rdf_fragment = f_rdf_fragment + "<" + f_id + "> a stato:0000087;  # 'categorical variable' (STATO_0000087)\n"
     f_rdf_fragment = f_rdf_fragment + "  rdfs:label  \"" + factor_name + "\"^^xsd:string;\n"
 
-    fvs=[]
+    fvs = []
     for key in fv_dict.keys():
         fv_id = str(uuid.uuid4())
         if counter < len(fv_dict.keys())-1:
