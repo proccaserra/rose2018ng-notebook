@@ -1,1 +1,9 @@
 sparqlkernel
+datapackage
+goodtables
+libchebipy
+plotnine
+pandas
+numpy
+rdflib
+SPARQLWrapper
