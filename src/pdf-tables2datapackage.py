@@ -2,6 +2,7 @@ import camelot
 import os
 import pandas as pd
 import re
+import libchebipy
 
 cwd = os.getcwd()
 os.chdir('../data/raw')
@@ -22,6 +23,22 @@ S1_table_data = S1_table_data.reset_index(drop=True)
 S1_table_data = S1_table_data.drop([0, 1, 2, 3], axis=0)
 # resetting the index again
 S1_table_data = S1_table_data.reset_index(drop=True)
+
+
+def get_chebi_ids(dataframe):
+    for elements in dataframe['chemical_name']:
+        hit = libchebipy.search(dataframe.loc[i, 'chemical_name'], True)
+        if len(hit) > 0:
+            # print("slice -  HIT: ", data_slice.loc[i, 'chemical_name'], ":", hit[0].get_inchi(), "|", hit[0].get_id())
+            dataframe.loc[i, 'inchi'] = hit[0].get_inchi()
+            dataframe.loc[i, 'chebi_identifier'] = hit[0].get_id()
+        else:
+            # print("slice - nothing found: ", data_slice.loc[i, 'chemical_name'])
+            dataframe.loc[i, 'inchi'] = ''
+            dataframe.loc[i, 'chebi_identifier'] = ''
+
+    return dataframe
+
 
 S1_table_data.rename(columns={0: "chemical_name",
                            1: "sample_mean_1",
@@ -50,6 +67,9 @@ S1_table_data = S1_table_data.reset_index(drop=True)
 # inserting the chemical annotation fields
 S1_table_data.insert(loc=1, column='inchi', value='')
 S1_table_data.insert(loc=2, column='chebi_identifier', value='')
+
+S1_table_data = get_chebi_ids(S1_table_data)
+
 
 # The following steps are needed to perform the table transformation from a 'wide' layout to a 'long table' one
 # Prep stubnames - pick out all the feature_model variables and remove the model suffices
