@@ -1,15 +1,31 @@
 rose2018ng-notebooks
 ==============================
 
-A data science project aiming at making a GC-MS based metabolite profiles of Rose scent published in Nature Genetics, in June 2018 compliant with the FAIR principles, through the use of several data standards, namely: Frictionless Tabular data package as syntax for the data matrix, Semantic markup of chemicals with CHEBI ontology and InCHI for annotation, markup of measurements with STATO ontology, and insisting on the need to clarify the semantics of data matrices.
+A data science project aiming at making a GC-MS based metabolite profiles of Rose scent published in [Nature Genetics, in June 2018](https://doi.org/10.1038/s41588-018-0110-3) compliant with the [FAIR principles](https://doi.org/10.1038/sdata.2016.18), through the use of several data standards, namely: [Frictionless Tabular data package](https://frictionlessdata.io/specs/tabular-data-package/) as syntax for the data matrix, semantic markup of measurements with [STATO ontology](https://github.com/isa-tools/stato), of chemicals with [CHEBI ontology](http://purl.obolibrary.org/obo/chebi.owl) and InChi for annotation, and insisting on the need to clarify the semantics of data matrices.
 
-A exhaustive documentation of the transformation process is provided in the form of a jupyter notebook.
+A exhaustive documentation of the transformation process is provided in the form of a series of jupyter notebooks.
+
+[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F0-rose-metabolites-Python-data-handling.ipynb) A Jupyter+Python notebook: 0-rose-metabolites-Python-data-handling.ipynb
+
+A data exploration and graphical recapitulation of the dataset is performed in python using the graphic grammar library plotnine from either the Tabular Data Package or from the RDF/Linked Data graph, to demonstrate that equivalency of the representations. A visual exploration also shows how 2 datasets treated with the same protocol can be readily mobilized for a data integration exercise.
+
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F1-rose-metabolites-Python-analysis.ipynb) A Jupyter+Python notebook: 1-rose-metabolites-Python-analysis.ipynb
 
 A full Linked Data (LD) representation is provided and visualization of the metabolite profiles in 6 rose strains and 3 plants parts is presented.
 
-A data exploration and graphical recapitulation of the dataset is performed in python using the graphic grammar library plotnine from either the Tabular Data Package or from the RDF/Linked Data graph, to demonstrate that equivalency of the representations.
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F2-rose-metabolites-Python-RDF-querying-analysis.ipynb) A Jupyter+Python+Sparql notebook: 2-rose-metabolites-Python-RDF-querying-analysis.ipynb
 
-A visual exploration also shows how 2 datasets treated with the same protocols can be readily mobilized for a data integration exercise.
+
+A fourth notebook performs the visual exploration of the dataset using R, to show case how the Tabular Data Package can be consumed in a different environment very easily.
+
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F3-rose-metabolites-R-analysis.ipynb) A Jupyter+R notebook: 3-rose-metabolites-R-analysis.ipynb
+
+
+The Four notebooks are available and can be run locally or using the [Binder](https://mybinder.org/) infrastructure.
+
+Note that launching notebook with binder may take several minutes (10-15 minutes) for the installation process to complete the first time around and depending on load on the infrastructure. Once done and as long as the build remains on the Binder infrastructure, starting and running the notebooks is very quick. However, bear in mind that the lifespan of these notebook instances on the virtual infrastructure is by nature limited.
+
+If the binder route does not behave, you may run the notebooks locally. See below for the instructions.
 
 
 Project Organization
@@ -37,23 +53,6 @@ Project Organization
     └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
 
-
-rose2018ng-notebooks/notebooks is a a repository for notebooks associated with the Rose targeted metabolite profiling analysis (nature genetics 2018)
-
-Four notebooks are available and can be run locally or using the [Binder](https://mybinder.org/) infrastructure.
-
-Note that launching notebook with binder may take several minutes (10-15 minutes) for the installation process to complete the first time around and depending on load on the infrastructure. Once done and as long as the build remains on the Binder infrastructure, starting and running the notebooks is very quick. However, bear in mind that the lifespan of these notebook instances on the virtual infrastructure is by nature limited.
-
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F0-rose-metabolites-Python-data-handling.ipynb) A Jupyter+Python notebook: 0-rose-metabolites-Python-data-handling.ipynb
-
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F1-rose-metabolites-Python-analysis.ipynb) A Jupyter+Python notebook: 1-rose-metabolites-Python-analysis.ipynb
-
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F2-rose-metabolites-Python-RDF-querying-analysis.ipynb) A Jupyter+Python+Sparql notebook: 2-rose-metabolites-Python-RDF-querying-analysis.ipynb
-
-
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F3-rose-metabolites-R-analysis.ipynb) A Jupyter+R notebook: 3-rose-metabolites-R-analysis.ipynb
-
-If the binder route does not behave, you may run the notebooks locally. See below for the instructions.
 
 
 # If running jupyter locally:

@@ -44,3 +44,6 @@ rsconnect/
 .gitignore
 *.*~
 .idea
+
+#temporary exclusion:
+src/chebi-test.py
