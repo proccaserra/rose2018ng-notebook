@@ -80,11 +80,11 @@ data_slice = data_slice.reset_index(drop=True)
 for i in range(0, 60):
     hit = libchebipy.search(data_slice.loc[i, 'chemical_name'], True)
     if len(hit) > 0:
-        # print("slice -  HIT: ", data_slice.loc[i, 'chemical_name'], ":", hit[0].get_inchi(), "|", hit[0].get_id())
+        print("slice -  HIT: ", data_slice.loc[i, 'chemical_name'], ":", hit[0].get_inchi(), "|", hit[0].get_id())
         data_slice.loc[i, 'inchi'] = hit[0].get_inchi()
         data_slice.loc[i, 'chebi_identifier'] = hit[0].get_id()
     else:
-        # print("slice - nothing found: ", data_slice.loc[i, 'chemical_name'])
+        print("slice - nothing found: ", data_slice.loc[i, 'chemical_name'])
         data_slice.loc[i, 'inchi'] = ''
         data_slice.loc[i, 'chebi_identifier'] = ''
 
@@ -92,7 +92,7 @@ for i in range(0, 60):
 # data_slice.drop([0], inplace=True)
 
 # We may wish to print intermediate results:
-# data_slice.to_csv("slice.txt", sep='\t', encoding='utf-8', index=False)
+data_slice.to_csv("slice.txt", sep='\t', encoding='utf-8', index=False)
 
 # The following steps are needed to perform the table transformation from a 'wide' layout to a 'long table' one
 # Prep stubnames - pick out all the feature_model variables and remove the model suffices
@@ -183,7 +183,7 @@ long_df_from_file.loc[long_df_from_file['var2_uri'] == 8, 'var2_uri'] = 'http://
 # dealing with missing values: setting empty values to zero for sample_mean and sem to enable calculation:
 # to do this, we rely on Pandas fillna function
 long_df_from_file['sample_mean'] = long_df_from_file['sample_mean'].fillna("0")
-long_df_from_file['sem'] = long_df_from_file['sample_mean'].fillna("0")
+long_df_from_file['sem'] = long_df_from_file['sem'].fillna("0")
 
 
 # Reorganizing Columns order in the DataFrame/File to match the Frictionless Tabular Data Package Layout
