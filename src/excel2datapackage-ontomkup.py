@@ -52,13 +52,14 @@ def validate_datapkg(tab_data_package_file, data_package_definition):
 
 try:
     cwd = os.getcwd()
-    print(cwd)
+    print("current working directory:", cwd)
 except IOError as e:
     print(e)
 
 # Reading the native Excel file into a pandas dataframe
 try:
     os.chdir('./data/raw')
+    print("reading from directory: ", os.getcwd())
 except IOError as e:
     print(e)
 
@@ -69,14 +70,16 @@ except IOError as e:
 
 # Moving to the 'processed' directory, where we'll write the results on the raw data transformations
 try:
-    os.chdir('./processed/denovo')
+    os.chdir('../processed/denovo')
+    print("writing to directory: ", os.getcwd())
 except IOError as e:
     print(e)
 
-try:
-    cwd = os.getcwd()
-except IOError as e:
-    print(e)
+# try:
+#     cwd = os.getcwd()
+#     print("working directory: ",cwd)
+# except IOError as e:
+#     print(e)
 
 # Following a manual inspection of the Excel Source, getting the start row of the data
 # We use Pandas take() function to extract first a row of headers (hence -axis set to 0)
@@ -237,10 +240,13 @@ long_df_from_file = long_df_from_file[['chemical_name', 'inchi', 'chebi_identifi
                                        'unit', 'sem']]
 
 # Writing to file as a UTF-8 encoded tab delimited file
-long_df_from_file.to_csv("rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv",
+try:
+    long_df_from_file.to_csv("rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv",
                          quoting=1,
                          doublequote=True, sep=',',
                          encoding='utf-8', index=False)
+except IOError as e:
+    print(e)
 
 try:
     os.remove("long.txt")
