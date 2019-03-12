@@ -1,0 +1,11 @@
+datapackage
+camelot-py[all]
+flake8
+goodtables
+libchebipy
+numpy
+pandas
+plotnine
+rdflib
+sparqlkernel
+SPARQLWrapper
