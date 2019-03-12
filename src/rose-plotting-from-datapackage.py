@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+import os, errno
 from plotnine import *
 
 #data = pd.read_csv("./rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv")
@@ -28,6 +28,14 @@ p1 + theme(panel_background=element_rect(fill=blue)
        )
 
 p1
+
+try:
+    if not os.path.exists('./figures/denovo'):
+        os.makedirs('./figures/denovo')
+except OSError as e:
+    if e.errno != errno.EEXIST:
+        raise
+
 ggsave(plot=p1, filename='./figures/denovo/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.png', dpi=100)
 
 

@@ -1,5 +1,6 @@
 from matplotlib_venn import venn3, venn3_circles
 from matplotlib import pyplot as plt
+import os, errno
 import pandas as pd
 
 
@@ -78,6 +79,13 @@ for text in v1.set_labels:
     text.set_family('arial')
     text.set_style('normal')
 # plt.show()
+
+try:
+    if not os.path.exists('./figures/denovo'):
+        os.makedirs('./figures/denovo')
+except OSError as e:
+    if e.errno != errno.EEXIST:
+        raise
 
 plt.savefig('./figures/denovo/Figure_2a-venn-diagram-Science2015&NatGen2018.png', bbox_inches='tight')
 

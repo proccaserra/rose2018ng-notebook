@@ -8,7 +8,13 @@ import requests
 
 cwd = os.getcwd()
 print(cwd)
-os.chdir('./data/processed/denovo/rdf/')
+try:
+    if not os.path.exists('./data/processed/denovo/rdf/'):
+        os.makedirs('./data/processed/denovo/rdf/')
+        os.chdir('./data/processed/denovo/rdf/')
+except FileExistsError:
+    # directory already exists
+    pass
 
 jsonfile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json'
 # tablefile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'

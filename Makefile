@@ -34,10 +34,10 @@ data: requirements
 
 
 ## Make plots from data as figures for publications
-figures: requirements data
+figures: requirements
 	# $(PYTHON_INTERPRETER) src/rose-venn.py $(PROJECT_DIR)/data/processed/rose_aroma_compound_science2015_vs-NG2018.csv $(PROJECT_DIR)/figures/denovo/Figure2/Figure_2a-venn-diagram-Science2015\&NatGen2018.png
 	# $(PYTHON_INTERPRETER) src/rose-barplots.py $(PROJECT_DIR)/data/processed/rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv $(PROJECT_DIR)/figures/denovo/Figure3/Figure3-Rose-Scent-Profiles.png
-	# $(PYTHON_INTERPRETER) src/rose-plotting-from-datapackage.py
+	$(PYTHON_INTERPRETER) src/rose-plotting-from-datapackage.py
 	# $(PYTHON_INTERPRETER) src/rose-plotting-from-rdf.py
 	$(PYTHON_INTERPRETER) src/rose-venn.py
 

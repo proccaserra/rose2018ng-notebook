@@ -70,8 +70,10 @@ except IOError as e:
 
 # Moving to the 'processed' directory, where we'll write the results on the raw data transformations
 try:
-    os.chdir('../processed/denovo')
-    print("writing to directory: ", os.getcwd())
+    if not os.path.exists('../processed/denovo'):
+        os.makedirs('../processed/denovo')
+        os.chdir('../processed/denovo')
+        print("writing to directory: ", os.getcwd())
 except IOError as e:
     print(e)
 
