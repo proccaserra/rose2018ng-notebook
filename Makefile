@@ -49,7 +49,9 @@ clean:
 	find ./data/processed/denovo/ -type f -name "*.csv" -delete
 	find ./data/processed/denovo/ -type f -name "*.ttl" -delete
 	find ./figures/denovo/ -type f -name "*.pdf" -delete
-	find ./figures/denovo/ -type f -name "*.png" -delete
+	find ./figures/denovo/ -type f -name "*.png" -delete	
+	find . -type d -name "rdf" -delete
+	find . -name denovo -type d -exec rm -r {} \;
 
 ## Lint using flake8
 lint:
