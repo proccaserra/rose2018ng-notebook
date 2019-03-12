@@ -40,6 +40,7 @@ figures: requirements
 	$(PYTHON_INTERPRETER) src/rose-plotting-from-datapackage.py
 	# $(PYTHON_INTERPRETER) src/rose-plotting-from-rdf.py
 	$(PYTHON_INTERPRETER) src/rose-venn.py
+	$(PYTHON_INTERPRETER) src/rose-upset.py
 
 
 ## Delete all compiled Python files and generated outputs

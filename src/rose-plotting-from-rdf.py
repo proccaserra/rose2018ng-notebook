@@ -202,6 +202,6 @@ p1 + theme(panel_background=element_rect(fill=blue)
 p1
 
 
-ggsave(plot=p1, filename='./figures/denovo/rose-aroma-naturegenetics2018-from-RDF.png', dpi=100)
+ggsave(plot=p1, filename='./figures/denovo/Fig_3c-rose-aroma-naturegenetics2018-from-RDF.png', dpi=100)
 
        

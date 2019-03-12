@@ -36,7 +36,7 @@ except OSError as e:
     if e.errno != errno.EEXIST:
         raise
 
-ggsave(plot=p1, filename='./figures/denovo/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.png', dpi=100)
+ggsave(plot=p1, filename='./figures/denovo/Fig_3a-rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.png', dpi=100)
 
 
 #ng2018sc2015 = pd.read_csv("./rose-data/rose_aroma_compound_science2015_vs-NG2018.csv")
@@ -50,6 +50,6 @@ p2 = (ggplot(ng2018sc2015)
 
 )
 
-ggsave(plot=p2, filename='./figures/denovo/rose_aroma_compound_science2015_vs-NG2018.png', dpi=100)
+ggsave(plot=p2, filename='./figures/denovo/Fig_3b-rose_aroma_compound_science2015_vs-NG2018.png', dpi=100)
 
 
