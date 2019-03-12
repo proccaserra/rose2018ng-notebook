@@ -69,7 +69,7 @@ except IOError as e:
 
 # Moving to the 'processed' directory, where we'll write the results on the raw data transformations
 try:
-    os.chdir('../processed/denovo')
+    os.chdir('./processed/denovo')
 except IOError as e:
     print(e)
 
