@@ -8,14 +8,57 @@ import pandas as pd
 from datapackage import Package
 from goodtables import validate
 
+
+def get_chebi_ids(dataframe, number_of_items):
+    # a method to obtain InChi and Chebi ID from a chemical name using libchebi
+    # takes 2 arguments: a data frame and a number of chemicals
+
+    for idx in range(0, number_of_items):
+        hit = libchebipy.search(dataframe.loc[idx, 'chemical_name'], True)
+        if len(hit) > 0:
+            # print("slice -  HIT: ",element, ":", hit[0].get_inchi(), "|", hit[0].get_id())
+            dataframe.loc[idx, 'inchi'] = hit[0].get_inchi()
+            dataframe.loc[idx, 'chebi_identifier'] = hit[0].get_id()
+        else:
+            # print("slice - nothing found: ", data_slice.loc[i, 'chemical_name'])
+            dataframe.loc[idx, 'inchi'] = ''
+            dataframe.loc[idx, 'chebi_identifier'] = ''
+
+    return dataframe
+
+
+def validate_datapkg(tab_data_package_file, data_package_definition):
+    # validating the output against JSON data package specifications
+    # Getting the JSON Tabular DataPackage Definition from the store:
+    try:
+        pack = Package(data_package_definition)
+        # pack.valid
+        # pack.errors
+        for e_as_error in pack.errors:
+            print(e_as_error)
+        # print(pack.profile.name)
+
+        report = validate(tab_data_package_file)
+        if report:
+            # print(report['valid'])
+            print("\n" + tab_data_package_file + ": Nice one! A valid \'2 Factor Mean "
+                                                 "and Standard Error Tabular Data Package\'\n")
+        else:
+            print("Sorry :( Vadidation failed, please check: ", tab_data_package_file, "\n")
+            print(report)
+    except IOError as er:
+        print(er)
+
+
 try:
     cwd = os.getcwd()
+    print(cwd)
 except IOError as e:
     print(e)
 
 # Reading the native Excel file into a pandas dataframe
 try:
-    os.chdir('../data/raw')
+    os.chdir('./data/raw')
 except IOError as e:
     print(e)
 
@@ -26,7 +69,7 @@ except IOError as e:
 
 # Moving to the 'processed' directory, where we'll write the results on the raw data transformations
 try:
-    os.chdir('../processed')
+    os.chdir('../processed/denovo')
 except IOError as e:
     print(e)
 
@@ -80,11 +123,11 @@ data_slice = data_slice.reset_index(drop=True)
 for i in range(0, 60):
     hit = libchebipy.search(data_slice.loc[i, 'chemical_name'], True)
     if len(hit) > 0:
-        print("slice -  HIT: ", data_slice.loc[i, 'chemical_name'], ":", hit[0].get_inchi(), "|", hit[0].get_id())
+        # print("slice -  HIT: ", data_slice.loc[i, 'chemical_name'], ":", hit[0].get_inchi(), "|", hit[0].get_id())
         data_slice.loc[i, 'inchi'] = hit[0].get_inchi()
         data_slice.loc[i, 'chebi_identifier'] = hit[0].get_id()
     else:
-        print("slice - nothing found: ", data_slice.loc[i, 'chemical_name'])
+        # print("slice - nothing found: ", data_slice.loc[i, 'chemical_name'])
         data_slice.loc[i, 'inchi'] = ''
         data_slice.loc[i, 'chebi_identifier'] = ''
 
@@ -92,7 +135,7 @@ for i in range(0, 60):
 # data_slice.drop([0], inplace=True)
 
 # We may wish to print intermediate results:
-data_slice.to_csv("slice.txt", sep='\t', encoding='utf-8', index=False)
+# data_slice.to_csv("slice.txt", sep='\t', encoding='utf-8', index=False)
 
 # The following steps are needed to perform the table transformation from a 'wide' layout to a 'long table' one
 # Prep stubnames - pick out all the feature_model variables and remove the model suffices
@@ -176,7 +219,8 @@ long_df_from_file.loc[long_df_from_file['var2_uri'] == 7, 'var2_uri'] = 'http://
 
 long_df_from_file.loc[long_df_from_file['treatment'] == 8, 'treatment'] = 'R. wichurana petals'
 long_df_from_file.loc[long_df_from_file['var1_levels'] == 8, 'var1_levels'] = 'R. wichurana'
-long_df_from_file.loc[long_df_from_file['var1_uri'] == 8, 'var1_uri'] = 'http://purl.obolibrary.org/obo/NCBITaxon_2094184'
+long_df_from_file.loc[long_df_from_file['var1_uri'] == 8,
+                      'var1_uri'] = 'http://purl.obolibrary.org/obo/NCBITaxon_2094184'
 long_df_from_file.loc[long_df_from_file['var2_levels'] == 8, 'var2_levels'] = 'petals'
 long_df_from_file.loc[long_df_from_file['var2_uri'] == 8, 'var2_uri'] = 'http://purl.obolibrary.org/obo/PO_0009032'
 
@@ -207,22 +251,8 @@ except IOError as e:
 # validating the output against JSON data package specifications
 # Getting the JSON Tabular DataPackage Definition from the store:
 
-package_definition = '../../rose-metabo-JSON-DP-validated/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json'
-file_to_test = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
-
-try:
-    pack = Package(package_definition)
-    pack.valid
-    pack.errors
-    for e in pack.errors:
-        print(e)
-    print(pack.profile.name)
-
-    report = validate(file_to_test)
-    print(report['valid'])
-
-except IOError as e:
-    print(e)
+validate_datapkg('rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv',
+'../../../rose-metabo-JSON-DP-validated/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json')
 
 
 # TODO: create a function so users can choose whether all features are generated or only a subset

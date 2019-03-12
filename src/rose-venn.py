@@ -1,5 +1,8 @@
 from matplotlib_venn import venn3, venn3_circles
 from matplotlib import pyplot as plt
+import pandas as pd
+
+
 
 plt.rcParams.update({'font.family': 'Arial', 'font.size': 12, 'font.style':'normal'})
 
@@ -44,12 +47,12 @@ intersect_all = set(TableS1_Science2015) & set(TableS3_Science2015) & set(TableS
 intersect_1vNG = set(TableS1_Science2015) & set(set_NG2018)
 intersect_3vNG = set(TableS3_Science2015) & set(set_NG2018)
 
-print(len(intersect_1v3), "|", sorted(intersect_1v3))
-print(len(intersect_1v4), "|", sorted(intersect_1v4))
-print(len(intersect_3v4), "|", sorted(intersect_3v4))
-print(len(intersect_all), "|", sorted(intersect_all))
-print(len(intersect_1vNG), "|", sorted(intersect_1vNG))
-print(len(intersect_3vNG), "|", sorted(intersect_3vNG))
+# print(len(intersect_1v3), "|", sorted(intersect_1v3))
+# print(len(intersect_1v4), "|", sorted(intersect_1v4))
+# print(len(intersect_3v4), "|", sorted(intersect_3v4))
+# print(len(intersect_all), "|", sorted(intersect_all))
+# print(len(intersect_1vNG), "|", sorted(intersect_1vNG))
+# print(len(intersect_3vNG), "|", sorted(intersect_3vNG))
 
 #creates figure showing the overlap between the different VOCs testing in the 2015 article:
 # v=venn3([TableS1_Science2015, TableS3_Science2015, set_NG2018], ('TableS1-10.1126/science.aab0696', 'TableS3-10.1126/science.aab0696', 'SupplementaryData3-NatureGenetics.10.1038/s41588-018-0110-3'))
@@ -74,7 +77,9 @@ for text in v1.set_labels:
     text.set_fontsize(11)
     text.set_family('arial')
     text.set_style('normal')
-plt.show()
+# plt.show()
+
+plt.savefig('./figures/denovo/Figure_2a-venn-diagram-Science2015&NatGen2018.png', bbox_inches='tight')
 
 #///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 # input for generating figure 2 using upSetR:
@@ -85,6 +90,15 @@ plt.show()
 # set2_Science2015 = set([E_E_farnesol,E_beta_farnesene,alpha_cadinol,beta_myrcene,bicyclogermacrene,citronellal,citronellol,delta_cadinene,geranial,geraniol,geranyl_acetate,germacrene_D,germacrene_D_4_ol,limonene,linalool,neral,nerol,E_beta_caryophyllene,beta_elemene,beta_pinene,tau_cadinol,tau_muurolol,alpha_humulene,alpha_muurolene,alpha_muurolol,alpha_pinene])
 # set_NG2018=set([hexan-2-ol,hexanal,E_2_hexenal,Z_3_hexen_1_ol,E_2_hexen_1_ol,hexan_1_ol,nonane,alpha_pinene,benzaldehyde,beta_myrcene,Z_3_hexenyl_acetate,hexyl_acetate,E_hexenyl_acetate,limonene,benzylalcohol,phenylacetaldehyde,E_beta_ocimene,linalool,nonanal,2_phenylethanol,beta_citronellal,alpha-terpineol,decanal,nerol,beta_citronellol,neral,geraniol,beta_phenylethyl_acetate,3_5_dimethoxytoluene,geranial,undecanal,theaspirane_A,beta_citronellyl_acetate,eugenol,neryl_acetate,alpha_copaene,geranyl_acetate,beta_elemene,methyl_eugenol,E_beta_caryophyllene,1_3_5_trimethoxybenzene,dihydro_beta_ionone,alpha_guaiene,dihydro_beta_ionol,E_beta_farnesene,germacrene_D,pentadecane,E_E_alpha_farnesene,gamma_cadinene,delta_cadinene,elemol,germacrene_D_4_ol,hexadecane,tau_cadinol,beta_eudesmol,alpha_cadinol,heptadecene,heptadecane,E_E_farnesol,E_E_farnesal,E_E_farnesyl_acetate])
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\////////////////////////////////////////
+
+# set1_Science2015 = pd.Series([E_E_farnesal,E_E_farnesol,E_E_farnesyl_acetate,E_2_hexen_1_ol,E_2_hexenal,E_beta_farnesene,E_beta_ocimene,Z_3_hexen_1_ol,Z_3_hexenyl_acetate,1_3_5_trimethoxybenzene,2_phenylethanol,3_5_dimethoxytoluene,alpha_cadinol,benzaldehyde,benzylalcohol,beta_myrcene,bicyclogermacrene,citronellol,delta_cadinene,dihydro_beta_ionol,dihydro_beta_ionone,elemol,eugenol,geranial,geranic_acid,geraniol,geranyl_acetate,germacrene_D,germacrene_D_4_ol,hexan_1_ol,hexanal,hexyl_acetate,methyl_eugenol,neral,nerol,nonanal,phenylacetaldehyde,tau_cadinol,tau_muurolol,Z_beta_ocimene])
+# set2_Science2015 = pd.Series([E_E_farnesol,E_beta_farnesene,alpha_cadinol,beta_myrcene,bicyclogermacrene,citronellal,citronellol,delta_cadinene,geranial,geraniol,geranyl_acetate,germacrene_D,germacrene_D_4_ol,limonene,linalool,neral,nerol,E_beta_caryophyllene,beta_elemene,beta_pinene,tau_cadinol,tau_muurolol,alpha_humulene,alpha_muurolene,alpha_muurolol,alpha_pinene])
+# set_NG2018 = pd.Series([hexan-2-ol,hexanal,E_2_hexenal,Z_3_hexen_1_ol,E_2_hexen_1_ol,hexan_1_ol,nonane,alpha_pinene,benzaldehyde,beta_myrcene,Z_3_hexenyl_acetate,hexyl_acetate,E_hexenyl_acetate,limonene,benzylalcohol,phenylacetaldehyde,E_beta_ocimene,linalool,nonanal,2_phenylethanol,beta_citronellal,alpha-terpineol,decanal,nerol,beta_citronellol,neral,geraniol,beta_phenylethyl_acetate,3_5_dimethoxytoluene,geranial,undecanal,theaspirane_A,beta_citronellyl_acetate,eugenol,neryl_acetate,alpha_copaene,geranyl_acetate,beta_elemene,methyl_eugenol,E_beta_caryophyllene,1_3_5_trimethoxybenzene,dihydro_beta_ionone,alpha_guaiene,dihydro_beta_ionol,E_beta_farnesene,germacrene_D,pentadecane,E_E_alpha_farnesene,gamma_cadinene,delta_cadinene,elemol,germacrene_D_4_ol,hexadecane,tau_cadinol,beta_eudesmol,alpha_cadinol,heptadecene,heptadecane,E_E_farnesol,E_E_farnesal,E_E_farnesyl_acetate])
+
+# set1_Science2015 = set([E_E_farnesal,E_E_farnesol,E_E_farnesyl_acetate,E_2_hexen_1_ol,E_2_hexenal,E_beta_farnesene,E_beta_ocimene,Z_3_hexen_1_ol,Z_3_hexenyl_acetate,1_3_5_trimethoxybenzene,2_phenylethanol,3_5_dimethoxytoluene,alpha_cadinol,benzaldehyde,benzylalcohol,beta_myrcene,bicyclogermacrene,citronellol,delta_cadinene,dihydro_beta_ionol,dihydro_beta_ionone,elemol,eugenol,geranial,geranic_acid,geraniol,geranyl_acetate,germacrene_D,germacrene_D_4_ol,hexan_1_ol,hexanal,hexyl_acetate,methyl_eugenol,neral,nerol,nonanal,phenylacetaldehyde,tau_cadinol,tau_muurolol,Z_beta_ocimene])
+# set2_Science2015 = set([E_E_farnesol,E_beta_farnesene,alpha_cadinol,beta_myrcene,bicyclogermacrene,citronellal,citronellol,delta_cadinene,geranial,geraniol,geranyl_acetate,germacrene_D,germacrene_D_4_ol,limonene,linalool,neral,nerol,E_beta_caryophyllene,beta_elemene,beta_pinene,tau_cadinol,tau_muurolol,alpha_humulene,alpha_muurolene,alpha_muurolol,alpha_pinene])
+# set_NG2018 = set([hexan-2-ol,hexanal,E_2_hexenal,Z_3_hexen_1_ol,E_2_hexen_1_ol,hexan_1_ol,nonane,alpha_pinene,benzaldehyde,beta_myrcene,Z_3_hexenyl_acetate,hexyl_acetate,E_hexenyl_acetate,limonene,benzylalcohol,phenylacetaldehyde,E_beta_ocimene,linalool,nonanal,2_phenylethanol,beta_citronellal,alpha-terpineol,decanal,nerol,beta_citronellol,neral,geraniol,beta_phenylethyl_acetate,3_5_dimethoxytoluene,geranial,undecanal,theaspirane_A,beta_citronellyl_acetate,eugenol,neryl_acetate,alpha_copaene,geranyl_acetate,beta_elemene,methyl_eugenol,E_beta_caryophyllene,1_3_5_trimethoxybenzene,dihydro_beta_ionone,alpha_guaiene,dihydro_beta_ionol,E_beta_farnesene,germacrene_D,pentadecane,E_E_alpha_farnesene,gamma_cadinene,delta_cadinene,elemol,germacrene_D_4_ol,hexadecane,tau_cadinol,beta_eudesmol,alpha_cadinol,heptadecene,heptadecane,E_E_farnesol,E_E_farnesal,E_E_farnesyl_acetate])
+
 
 
 

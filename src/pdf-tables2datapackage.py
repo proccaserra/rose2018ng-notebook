@@ -1,3 +1,6 @@
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
+
 import camelot
 import os
 import pandas as pd
@@ -39,7 +42,7 @@ def validate_datapkg(tab_data_package_file, data_package_definition):
         report = validate(tab_data_package_file)
         if report:
             # print(report['valid'])
-            print(tab_data_package_file + ": Nice one! A valid \'2 Factor Mean + Standard Error Tabular Data Package\'")
+            print("\n" + tab_data_package_file + ": Nice one! A valid \'2 Factor Mean + Standard Error Tabular Data Package\'\n")
         else:
             print("Sorry :( Vadidation failed, please check: ", tab_data_package_file, "\n")
             print(report)
@@ -48,7 +51,7 @@ def validate_datapkg(tab_data_package_file, data_package_definition):
 
 
 cwd = os.getcwd()
-os.chdir('../data/raw')
+os.chdir('./data/raw')
 cwd = os.getcwd()
 
 # invoking camelot to read a pdf file and extracting tables located at specific pages
@@ -149,9 +152,9 @@ S1_table_data_long = pd.read_csv("long.txt", sep="\t")
 try:
     os.remove("long.txt")
     for fnames in os.walk("./"):
-        print("folder: ", fnames)
+        # print("folder: ", fnames)
         for f in fnames:
-            print("filename: ", f)
+            # print("filename: ", f)
             if len(f)>0:
                 for element in f:
                     if element.endswith(".csv"):
@@ -242,7 +245,7 @@ S1_table_data_long = S1_table_data_long[['chemical_name', 'inchi', 'chebi_identi
                                          'var2_levels', 'var2_uri', 'treatment', 'sample_size', 'sample_mean',
                                          'unit', 'sem']]
 
-os.chdir('../processed')
+os.chdir('../processed/denovo')
 
 S1_table_data_long.to_csv("rose-aroma-science2015-Table_S1_long.csv",
                           sep=',',
@@ -252,4 +255,4 @@ S1_table_data_long.to_csv("rose-aroma-science2015-Table_S1_long.csv",
                           index=False)
 
 validate_datapkg('rose-aroma-science2015-Table_S1_long.csv',
-                 '../../rose-metabo-JSON-DP-validated/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json')
+                 '../../../rose-metabo-JSON-DP-validated/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json')

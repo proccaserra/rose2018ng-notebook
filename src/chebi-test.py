@@ -6,9 +6,6 @@ import libchebipy
 from datapackage import Package
 from goodtables import validate
 
-S1_table_data = {'chemical_name':  ["2-Hexanol", "(E)-2-hexenal", "aspirin", "ethanol"]}
-df = pd.DataFrame(data=S1_table_data)
-
 
 def get_chebi_ids(dataframe, number_of_items):
     # a method to obtain InChi and Chebi ID from a chemical name using libchebi
@@ -42,5 +39,6 @@ def get_chebi_ids(dataframe, number_of_items):
     return dataframe
 
 
-
+S1_table_data = {'chemical_name':  ["2-Hexanol", "(E)-2-hexenal", "aspirin", "ethanol"]}
+df = pd.DataFrame(data=S1_table_data)
 S1_table_data = get_chebi_ids(df, 4)

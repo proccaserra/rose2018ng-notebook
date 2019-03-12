@@ -1,9 +1,11 @@
-sparqlkernel
 datapackage
+camelot-py[all]
+flake8
 goodtables
 libchebipy
-plotnine
-pandas
 numpy
+pandas
+plotnine
 rdflib
+sparqlkernel
 SPARQLWrapper

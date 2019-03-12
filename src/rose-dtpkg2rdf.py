@@ -7,16 +7,17 @@ import uuid
 import requests
 
 cwd = os.getcwd()
-os.chdir('../rose-data')
+print(cwd)
+os.chdir('./data/processed/denovo/rdf/')
 
 jsonfile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-datapackage.json'
 # tablefile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
 # tablefile = 'rose-aroma-2018-subset.csv'
 # saveAsttl = open('../rose-data-as-rdf/rose-aroma-ng-06-2018-subset.ttl', 'w')
 
-tablefile = 'https://sandbox.zenodo.org/api/files/65bed921-e764-4418-8f20-077dab0e7a45/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
-# tablefile = 'rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
-saveAsttl = open('../rose-data-as-rdf/rose-aroma-ng-06-2018-full.ttl', 'w')
+# tablefile = 'https://sandbox.zenodo.org/api/files/65bed921-e764-4418-8f20-077dab0e7a45/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
+tablefile = '../rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv'
+saveAsttl = open('rose-aroma-ng-06-2018-full.ttl', 'w')
 
 header = "\n\
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\
