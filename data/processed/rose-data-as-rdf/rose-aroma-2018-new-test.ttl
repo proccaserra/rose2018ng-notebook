@@ -1,0 +1,404 @@
+#-------------------------------------------------------------------------
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/#> .
+@prefix chmo:   <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix chebi:   <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix geno:   <http://purl.obolibrary.org/obo/GENO_> .
+@prefix msio:   <http://purl.obolibrary.org/obo/MSIO_> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix po: <http://purl.obolibrary.org/obo/PO_> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO_> .
+@prefix ncbitax: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+#/////////////////START_NEW_GROUP///////////////////
+<f9b215fd-f61b-40ee-b886-2e0afe692164> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <fac9f3fd-374c-4036-8af0-02304fdb381c> ;
+ ro:has_specified_output <1e0d3d67-97d2-4c0e-8d94-a59f07b9d579> .
+
+<1e0d3d67-97d2-4c0e-8d94-a59f07b9d579> a obi:0000751 .	#'dependent variable'
+<1e0d3d67-97d2-4c0e-8d94-a59f07b9d579> a stato:0000251. #'continuous variable'
+<1e0d3d67-97d2-4c0e-8d94-a59f07b9d579> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <f9b215fd-f61b-40ee-b886-2e0afe692164> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009031";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <c4b1bc22-d549-4268-9e04-6b75b82e5c22> .
+
+
+<29ebf165-1f83-42a8-a774-9e024fc590a2> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <fac9f3fd-374c-4036-8af0-02304fdb381c> ;
+ ro:has_specified_output <dd71a1d1-0c02-4a52-87e4-877354ef5b1b> .
+
+<dd71a1d1-0c02-4a52-87e4-877354ef5b1b> a obi:0000751 .	#'dependent variable'
+<dd71a1d1-0c02-4a52-87e4-877354ef5b1b> a stato:0000251. #'continuous variable'
+<dd71a1d1-0c02-4a52-87e4-877354ef5b1b> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <29ebf165-1f83-42a8-a774-9e024fc590a2> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009031";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <c4b1bc22-d549-4268-9e04-6b75b82e5c22> .
+
+
+<8d920193-37bf-45ae-80cb-ef0c0173cc73> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <fac9f3fd-374c-4036-8af0-02304fdb381c> ;
+ ro:has_specified_output <841c0816-7794-43c1-bade-150ab6aaa102> .
+
+<841c0816-7794-43c1-bade-150ab6aaa102> a obi:0000751 .	#'dependent variable'
+<841c0816-7794-43c1-bade-150ab6aaa102> a stato:0000251. #'continuous variable'
+<841c0816-7794-43c1-bade-150ab6aaa102> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <8d920193-37bf-45ae-80cb-ef0c0173cc73> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009031";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <c4b1bc22-d549-4268-9e04-6b75b82e5c22> .
+
+
+<fac9f3fd-374c-4036-8af0-02304fdb381c> a obi:0000671 ; # a biological specimen
+ rdfs:label "sepal"^^xsd:string;
+ ro:derives_from "po:0009031";
+ ro:part_of "ncbitax:74649".
+
+<c4b1bc22-d549-4268-9e04-6b75b82e5c22> a stato:0000193 ; # a population
+ rdfs:label "R. chinensis 'Old Blush' sepals"^^xsd:string ;
+ ro:has_value "R. chinensis 'Old Blush' sepals"^^xsd:string ;
+ ro:has_member <f9b215fd-f61b-40ee-b886-2e0afe692164> ;
+ ro:has_member <29ebf165-1f83-42a8-a774-9e024fc590a2> ;
+ ro:has_member <8d920193-37bf-45ae-80cb-ef0c0173cc73> .
+
+<98d0030b-15d9-4670-b345-46bc3ac98e1f> a stato:0000088 ; # a population size
+ ro:has_value "3"^^xsd:integer ;
+ ro:is_about <c4b1bc22-d549-4268-9e04-6b75b82e5c22> .
+
+<9b57cc7f-7106-4273-9ed0-3330612d87d1> a stato:0000402;  # 'population mean'
+  ro:is_about  "chebi:88528";
+  stato:computed_over <c4b1bc22-d549-4268-9e04-6b75b82e5c22>;
+  ro:has_value "4.95"^^xsd:decimal.
+
+<9390a1e1-9d75-431c-bab6-4ab55ea45cf3> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <9b57cc7f-7106-4273-9ed0-3330612d87d1>;
+  stato:computed_over <c4b1bc22-d549-4268-9e04-6b75b82e5c22>;
+  ro:has_value "0.59"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+<57beaa75-9295-4f6d-84d9-7bac38e861e0> a stato:0000402;  # 'population mean'
+  ro:is_about "chebi:88370";
+  stato:computed_over <c4b1bc22-d549-4268-9e04-6b75b82e5c22>;
+  ro:has_value "0"^^xsd:decimal.
+
+<8ffa8939-be2c-4520-b2c5-4b013f3aa289> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <57beaa75-9295-4f6d-84d9-7bac38e861e0>;
+  stato:computed_over <c4b1bc22-d549-4268-9e04-6b75b82e5c22>;
+  ro:has_value "0"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+#/////////////////START_NEW_GROUP///////////////////
+<c76bc808-6fdc-4a69-9772-c9ad31e9b293> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <5955fd2a-8f79-4ebb-9af4-25a43269bf4f> ;
+ ro:has_specified_output <23cee382-2c49-44af-97a0-8776ec5c3d57> .
+
+<23cee382-2c49-44af-97a0-8776ec5c3d57> a obi:0000751 .	#'dependent variable'
+<23cee382-2c49-44af-97a0-8776ec5c3d57> a stato:0000251. #'continuous variable'
+<23cee382-2c49-44af-97a0-8776ec5c3d57> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <c76bc808-6fdc-4a69-9772-c9ad31e9b293> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009029";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <fdb23711-21fd-47c7-8904-282f1ff865f6> .
+
+
+<cc62d44b-2c84-4027-9f57-c6b010a9bd4d> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <5955fd2a-8f79-4ebb-9af4-25a43269bf4f> ;
+ ro:has_specified_output <1c54db84-d405-4f0a-baeb-8a73da9bc3b4> .
+
+<1c54db84-d405-4f0a-baeb-8a73da9bc3b4> a obi:0000751 .	#'dependent variable'
+<1c54db84-d405-4f0a-baeb-8a73da9bc3b4> a stato:0000251. #'continuous variable'
+<1c54db84-d405-4f0a-baeb-8a73da9bc3b4> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <cc62d44b-2c84-4027-9f57-c6b010a9bd4d> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009029";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <fdb23711-21fd-47c7-8904-282f1ff865f6> .
+
+
+<9aaa3b1a-1e8a-4fe5-aa07-0731a528fe1c> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <5955fd2a-8f79-4ebb-9af4-25a43269bf4f> ;
+ ro:has_specified_output <b17973a6-715c-4f42-88a4-575dee023682> .
+
+<b17973a6-715c-4f42-88a4-575dee023682> a obi:0000751 .	#'dependent variable'
+<b17973a6-715c-4f42-88a4-575dee023682> a stato:0000251. #'continuous variable'
+<b17973a6-715c-4f42-88a4-575dee023682> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <9aaa3b1a-1e8a-4fe5-aa07-0731a528fe1c> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009029";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <fdb23711-21fd-47c7-8904-282f1ff865f6> .
+
+
+<5955fd2a-8f79-4ebb-9af4-25a43269bf4f> a obi:0000671 ; # a biological specimen
+ rdfs:label "stamen"^^xsd:string;
+ ro:derives_from "po:0009029";
+ ro:part_of "ncbitax:74649".
+
+<fdb23711-21fd-47c7-8904-282f1ff865f6> a stato:0000193 ; # a population
+ rdfs:label "R. chinensis 'Old Blush' stamens"^^xsd:string ;
+ ro:has_value "R. chinensis 'Old Blush' stamens"^^xsd:string ;
+ ro:has_member <c76bc808-6fdc-4a69-9772-c9ad31e9b293> ;
+ ro:has_member <cc62d44b-2c84-4027-9f57-c6b010a9bd4d> ;
+ ro:has_member <9aaa3b1a-1e8a-4fe5-aa07-0731a528fe1c> .
+
+<ddf73202-8013-4386-b263-84a8c82e2ec6> a stato:0000088 ; # a population size
+ ro:has_value "3"^^xsd:integer ;
+ ro:is_about <fdb23711-21fd-47c7-8904-282f1ff865f6> .
+
+<794b53b5-f6f7-4604-8191-f6ab5dad8b5b> a stato:0000402;  # 'population mean'
+  ro:is_about  "chebi:88528";
+  stato:computed_over <fdb23711-21fd-47c7-8904-282f1ff865f6>;
+  ro:has_value "0.9"^^xsd:decimal.
+
+<0f6ddfe0-5f2d-4d74-bea8-fe03700b0a77> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <794b53b5-f6f7-4604-8191-f6ab5dad8b5b>;
+  stato:computed_over <fdb23711-21fd-47c7-8904-282f1ff865f6>;
+  ro:has_value "0.46"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+<f60f308c-f383-49d4-a1bb-5d5636af7a59> a stato:0000402;  # 'population mean'
+  ro:is_about "chebi:88370";
+  stato:computed_over <fdb23711-21fd-47c7-8904-282f1ff865f6>;
+  ro:has_value "0"^^xsd:decimal.
+
+<38aea5cb-bb63-4cf0-813d-b80e755c311b> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <f60f308c-f383-49d4-a1bb-5d5636af7a59>;
+  stato:computed_over <fdb23711-21fd-47c7-8904-282f1ff865f6>;
+  ro:has_value "0"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+#/////////////////START_NEW_GROUP///////////////////
+<a23fcc30-e214-46b1-b616-fbe4a80a7f1c> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <f8942147-d0f6-494b-81c4-3721801bfba0> ;
+ ro:has_specified_output <fc5c61cc-039f-45bd-8403-b0a2044297b0> .
+
+<fc5c61cc-039f-45bd-8403-b0a2044297b0> a obi:0000751 .	#'dependent variable'
+<fc5c61cc-039f-45bd-8403-b0a2044297b0> a stato:0000251. #'continuous variable'
+<fc5c61cc-039f-45bd-8403-b0a2044297b0> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <a23fcc30-e214-46b1-b616-fbe4a80a7f1c> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009032";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <97ca182e-a94c-4ad9-96fe-07816aa5e771> .
+
+
+<28a0caa0-7fc6-47fd-b4b1-50634ff70f25> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <f8942147-d0f6-494b-81c4-3721801bfba0> ;
+ ro:has_specified_output <daf38640-e47e-479c-8145-c205a6cd2b8a> .
+
+<daf38640-e47e-479c-8145-c205a6cd2b8a> a obi:0000751 .	#'dependent variable'
+<daf38640-e47e-479c-8145-c205a6cd2b8a> a stato:0000251. #'continuous variable'
+<daf38640-e47e-479c-8145-c205a6cd2b8a> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <28a0caa0-7fc6-47fd-b4b1-50634ff70f25> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009032";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <97ca182e-a94c-4ad9-96fe-07816aa5e771> .
+
+
+<2cc12101-5408-4ef2-9763-9689d762f620> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <f8942147-d0f6-494b-81c4-3721801bfba0> ;
+ ro:has_specified_output <87cc2680-fded-4fbd-b958-b938afcbbf52> .
+
+<87cc2680-fded-4fbd-b958-b938afcbbf52> a obi:0000751 .	#'dependent variable'
+<87cc2680-fded-4fbd-b958-b938afcbbf52> a stato:0000251. #'continuous variable'
+<87cc2680-fded-4fbd-b958-b938afcbbf52> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <2cc12101-5408-4ef2-9763-9689d762f620> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009032";
+    ro:derives_from "ncbitax:74649";
+    ro:measured_in <97ca182e-a94c-4ad9-96fe-07816aa5e771> .
+
+
+<f8942147-d0f6-494b-81c4-3721801bfba0> a obi:0000671 ; # a biological specimen
+ rdfs:label "petal"^^xsd:string;
+ ro:derives_from "po:0009032";
+ ro:part_of "ncbitax:74649".
+
+<97ca182e-a94c-4ad9-96fe-07816aa5e771> a stato:0000193 ; # a population
+ rdfs:label "R. chinensis 'Old Blush' petals"^^xsd:string ;
+ ro:has_value "R. chinensis 'Old Blush' petals"^^xsd:string ;
+ ro:has_member <a23fcc30-e214-46b1-b616-fbe4a80a7f1c> ;
+ ro:has_member <28a0caa0-7fc6-47fd-b4b1-50634ff70f25> ;
+ ro:has_member <2cc12101-5408-4ef2-9763-9689d762f620> .
+
+<ba1e09f3-ac6c-4270-8b58-88e8101e7818> a stato:0000088 ; # a population size
+ ro:has_value "3"^^xsd:integer ;
+ ro:is_about <97ca182e-a94c-4ad9-96fe-07816aa5e771> .
+
+<373c6105-4109-4330-bd92-78adbab922fc> a stato:0000402;  # 'population mean'
+  ro:is_about  "chebi:88528";
+  stato:computed_over <97ca182e-a94c-4ad9-96fe-07816aa5e771>;
+  ro:has_value "1.59"^^xsd:decimal.
+
+<6e1313d2-a410-4c83-b390-b47d463c9480> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <373c6105-4109-4330-bd92-78adbab922fc>;
+  stato:computed_over <97ca182e-a94c-4ad9-96fe-07816aa5e771>;
+  ro:has_value "0.22"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+<edf7d876-7a22-48b5-981b-88d1beae3a40> a stato:0000402;  # 'population mean'
+  ro:is_about "chebi:88370";
+  stato:computed_over <97ca182e-a94c-4ad9-96fe-07816aa5e771>;
+  ro:has_value "0"^^xsd:decimal.
+
+<5b6972cb-088b-4e61-b08c-277a1b5bf7c7> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <edf7d876-7a22-48b5-981b-88d1beae3a40>;
+  stato:computed_over <97ca182e-a94c-4ad9-96fe-07816aa5e771>;
+  ro:has_value "0"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+#/////////////////START_NEW_GROUP///////////////////
+<b08b7115-ff92-40e4-a246-19595b5f6a8c> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <5ed81173-bd6f-4065-8581-7bbface85e5d> ;
+ ro:has_specified_output <4045ff6e-4473-46a1-b812-65a8771e9ed3> .
+
+<4045ff6e-4473-46a1-b812-65a8771e9ed3> a obi:0000751 .	#'dependent variable'
+<4045ff6e-4473-46a1-b812-65a8771e9ed3> a stato:0000251. #'continuous variable'
+<4045ff6e-4473-46a1-b812-65a8771e9ed3> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <b08b7115-ff92-40e4-a246-19595b5f6a8c> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009032";
+    ro:derives_from "ncbitax:74650";
+    ro:measured_in <a3505734-545e-437e-bdcd-07832d1e6a10> .
+
+
+<1a47f288-6f52-42b0-9137-cb88beb5dfb3> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <5ed81173-bd6f-4065-8581-7bbface85e5d> ;
+ ro:has_specified_output <bc2b4b45-7340-4ba5-a908-24896cc35eed> .
+
+<bc2b4b45-7340-4ba5-a908-24896cc35eed> a obi:0000751 .	#'dependent variable'
+<bc2b4b45-7340-4ba5-a908-24896cc35eed> a stato:0000251. #'continuous variable'
+<bc2b4b45-7340-4ba5-a908-24896cc35eed> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <1a47f288-6f52-42b0-9137-cb88beb5dfb3> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009032";
+    ro:derives_from "ncbitax:74650";
+    ro:measured_in <a3505734-545e-437e-bdcd-07832d1e6a10> .
+
+
+<dca94a80-f823-4186-9f67-698adf094d74> a obi:0000070 ; #'assay'
+ ro:has_part "msio:0000100" ; #'targeted metabolite profiling'
+ ro:has_part "chmo:0000497" ; #'GC mass spectrometry'
+ ro:has_specified_input <5ed81173-bd6f-4065-8581-7bbface85e5d> ;
+ ro:has_specified_output <f999bf6a-6b47-4713-9711-ebffacd2c805> .
+
+<f999bf6a-6b47-4713-9711-ebffacd2c805> a obi:0000751 .	#'dependent variable'
+<f999bf6a-6b47-4713-9711-ebffacd2c805> a stato:0000251. #'continuous variable'
+<f999bf6a-6b47-4713-9711-ebffacd2c805> a stato:0000072 ;	#'substance concentration'
+    ro:is_specified_output_of <dca94a80-f823-4186-9f67-698adf094d74> ;
+    ro:is_about "chebi:88528";
+    ro:located_in "po:0009032";
+    ro:derives_from "ncbitax:74650";
+    ro:measured_in <a3505734-545e-437e-bdcd-07832d1e6a10> .
+
+
+<5ed81173-bd6f-4065-8581-7bbface85e5d> a obi:0000671 ; # a biological specimen
+ rdfs:label "petal"^^xsd:string;
+ ro:derives_from "po:0009032";
+ ro:part_of "ncbitax:74650".
+
+<a3505734-545e-437e-bdcd-07832d1e6a10> a stato:0000193 ; # a population
+ rdfs:label "R. gigantea petals"^^xsd:string ;
+ ro:has_value "R. gigantea petals"^^xsd:string ;
+ ro:has_member <b08b7115-ff92-40e4-a246-19595b5f6a8c> ;
+ ro:has_member <1a47f288-6f52-42b0-9137-cb88beb5dfb3> ;
+ ro:has_member <dca94a80-f823-4186-9f67-698adf094d74> .
+
+<50f261df-730e-4a80-a84f-2f584cc70cb7> a stato:0000088 ; # a population size
+ ro:has_value "3"^^xsd:integer ;
+ ro:is_about <a3505734-545e-437e-bdcd-07832d1e6a10> .
+
+<31552535-6e5f-41ba-84d4-d87a18c0d478> a stato:0000402;  # 'population mean'
+  ro:is_about  "chebi:88528";
+  stato:computed_over <a3505734-545e-437e-bdcd-07832d1e6a10>;
+  ro:has_value "0.65"^^xsd:decimal.
+
+<bcc27a4e-eaf8-4870-91af-2e70f29b1acd> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <31552535-6e5f-41ba-84d4-d87a18c0d478>;
+  stato:computed_over <a3505734-545e-437e-bdcd-07832d1e6a10>;
+  ro:has_value "0.03"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+<e83c9afe-e23f-43da-848b-fdbb82152a12> a stato:0000402;  # 'population mean'
+  ro:is_about "chebi:88370";
+  stato:computed_over <a3505734-545e-437e-bdcd-07832d1e6a10>;
+  ro:has_value "0"^^xsd:decimal.
+
+<dd4a8776-9297-40b7-91db-85619230674c> a stato:0000037; # 'standard error of the mean'
+  ro:denotes <e83c9afe-e23f-43da-848b-fdbb82152a12>;
+  stato:computed_over <a3505734-545e-437e-bdcd-07832d1e6a10>;
+  ro:has_value "0"^^xsd:decimal.
+
+#\\\\\\\\\NEW LINE of RECORDS\\\\\\\\\
+
+# ************ declaration of independent variables and their levels *************
+
+
+<var1> a obi:0000750.  # 'study design independent variable'  same_as (OBI_0000750)
+<var1> a stato:0000087;  # 'categorical variable' (STATO_0000087)
+   rdfs:label  "genotype"^^xsd:string;
+   ro:has_part <163127cf-70b9-4e23-bdcf-93e33c1ef18c> ;
+   ro:has_part <e5acff5e-8896-41ed-bf1c-837be24f8a42> .
+
+<163127cf-70b9-4e23-bdcf-93e33c1ef18c> a stato:0000265 ; # a factor level
+ rdfs:label "R. chinensis 'Old Blush'"^^xsd:string .
+<e5acff5e-8896-41ed-bf1c-837be24f8a42> a stato:0000265 ; # a factor level
+ rdfs:label "R. gigantea"^^xsd:string .
+
+
+<var2> a obi:0000750.   # 'study design independent variable'  same_as (OBI_0000750)
+<var2> a stato:0000087;  # 'categorical variable' (STATO_0000087)
+   rdfs:label  "organism part"^^xsd:string;
+   ro:has_part <d5c477b9-46b9-49b4-92e6-5d0e3bb926d9>  ;
+   ro:has_part <ad3c74b7-38a2-4209-a852-5dfa80017847>  ;
+   ro:has_part <d2a7da15-22bc-4de4-bc93-be08a4213794>  .
+
+<d5c477b9-46b9-49b4-92e6-5d0e3bb926d9> a stato:0000265 ; # a factor level
+ rdfs:label "sepal"^^xsd:string .
+<ad3c74b7-38a2-4209-a852-5dfa80017847> a stato:0000265 ; # a factor level
+ rdfs:label "stamen"^^xsd:string .
+<d2a7da15-22bc-4de4-bc93-be08a4213794> a stato:0000265 ; # a factor level
+ rdfs:label "petal"^^xsd:string .
+
+# ************ Listing all chemicals found *************
+
+<6fda6142-6be2-4fbe-976c-addfe55290a4> a "chebi:88528" ; # a chemical
+ rdfs:label "hexanal"^^xsd:string ;
+ ro:is_denoted_by "InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3"^^xsd:string ;
+
+<571cda49-3fe3-466a-b803-60412c6ebbaf> a "chebi:88370" ; # a chemical
+ rdfs:label "hexan-2-ol"^^xsd:string ;
+ ro:is_denoted_by "InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3"^^xsd:string ;
+

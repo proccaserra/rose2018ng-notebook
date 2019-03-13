@@ -43,3 +43,7 @@ rsconnect/
 .DS_Store
 .gitignore
 *.*~
+.idea
+
+#temporary exclusion:
+src/chebi-test.py

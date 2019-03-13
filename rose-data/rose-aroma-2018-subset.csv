@@ -1,9 +1,0 @@
-﻿chemical_name,inchi,chebi_identifier,var1_levels,var1_uri,var2_levels,var2_uri,treatment,sample_size,sample_mean,unit,sem
-hexanal,"InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",chebi:88528,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,sepal,http://purl.obolibrary.org/obo/PO_0009031,R. chinensis 'Old Blush' sepals,3,4.95,,0.59
-hexan-2-ol,"InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3",chebi:88370,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,sepal,http://purl.obolibrary.org/obo/PO_0009031,R. chinensis 'Old Blush' sepals,3,,,
-hexanal,"InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",chebi:88528,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,stamen,http://purl.obolibrary.org/obo/PO_0009029,R. chinensis 'Old Blush' stamens,3,0.9,,0.46
-hexan-2-ol,"InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3",chebi:88370,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,stamen,http://purl.obolibrary.org/obo/PO_0009029,R. chinensis 'Old Blush' stamens,3,,,
-hexanal,"InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",chebi:88528,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,petal,http://purl.obolibrary.org/obo/PO_0009032,R. chinensis 'Old Blush' petals,3,1.59,,0.22
-hexan-2-ol,"InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3",chebi:88370,R. chinensis 'Old Blush',http://purl.obolibrary.org/obo/NCBITaxon_74649,petal,http://purl.obolibrary.org/obo/PO_0009032,R. chinensis 'Old Blush' petals,3,,,
-hexanal,"InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",chebi:88528,R. gigantea,http://purl.obolibrary.org/obo/NCBITaxon_74650,petal,http://purl.obolibrary.org/obo/PO_0009032,R. gigantea petals,3,0.65,,0.03
-hexan-2-ol,"InChI=1S/C6H14O/c1-3-4-5-6(2)7/h6-7H,3-5H2,1-2H3",chebi:88370,R. gigantea,http://purl.obolibrary.org/obo/NCBITaxon_74650,petal,http://purl.obolibrary.org/obo/PO_0009032,R. gigantea petals,3,,,
