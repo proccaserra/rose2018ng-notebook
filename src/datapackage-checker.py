@@ -2,6 +2,10 @@ from datapackage import Package
 from goodtables import validate
 import os
 
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
 
 os.chdir('../rose-metabo-JSON-DP-validated')
 cwd = os.getcwd()

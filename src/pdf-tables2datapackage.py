@@ -1,6 +1,3 @@
-# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
-# ontology: http://www.stato-ontology.org
-
 import camelot
 import os
 import pandas as pd
@@ -9,6 +6,10 @@ import libchebipy
 from datapackage import Package
 from goodtables import validate
 
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
 
 def get_chebi_ids(dataframe, number_of_items):
     # a method to obtain InChi and Chebi ID from a chemical name using libchebi

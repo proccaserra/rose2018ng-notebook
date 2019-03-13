@@ -1,10 +1,12 @@
-# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
-# ontology: http://www.stato-ontology.org
-
 import os
 import csv
 import uuid
 import requests
+
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
 
 cwd = os.getcwd()
 print(cwd)

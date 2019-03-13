@@ -1,12 +1,14 @@
-# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
-# ontology: http://www.stato-ontology.org
-
 import os
 import libchebipy
 import re
 import pandas as pd
 from datapackage import Package
 from goodtables import validate
+
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
 
 
 def get_chebi_ids(dataframe, number_of_items):

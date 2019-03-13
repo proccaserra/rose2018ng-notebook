@@ -13,6 +13,11 @@ import numpy as np
 from plotnine import *
 
 
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
+
 def queryResultToHTMLTable(queryResult):
    HTMLResult = '<table><tr style="color:white;background-color:#43BFC7;font-weight:bold">'
    # print variable names

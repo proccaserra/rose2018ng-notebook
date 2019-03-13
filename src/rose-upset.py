@@ -1,8 +1,13 @@
-from matplotlib_venn import venn3, venn3_circles
 from matplotlib import pyplot as plt
 import pandas as pd
 import os, errno
 from upsetplot import plot
+
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
+
 
 try:
     if not os.path.exists('./figures/denovo'):

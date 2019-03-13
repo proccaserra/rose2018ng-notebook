@@ -3,6 +3,10 @@ from matplotlib import pyplot as plt
 import os, errno
 import pandas as pd
 
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
 
 
 plt.rcParams.update({'font.family': 'Arial', 'font.size': 12, 'font.style':'normal'})

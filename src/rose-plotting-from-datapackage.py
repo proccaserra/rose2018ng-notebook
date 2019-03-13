@@ -2,6 +2,11 @@ import pandas as pd
 import os, errno
 from plotnine import *
 
+__author__ = 'proccaserra (Philippe Rocca-Serra)'
+
+# author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
+# ontology: http://www.stato-ontology.org
+
 #data = pd.read_csv("./rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv")
 data = pd.read_csv("https://sandbox.zenodo.org/api/files/0fba7a4b-9ad9-439c-a0d8-e323dd74e478/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv") 
 
