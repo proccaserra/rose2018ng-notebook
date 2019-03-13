@@ -97,7 +97,7 @@ python-dateutil==2.8.0
 python-utils==2.3.0
 pytz==2018.9
 PyUpSet==0.1.1.post7
-PyYAML==3.13
+PyYAML==4.2b1
 pyzmq==17.1.2
 qtconsole==4.4.3
 rdflib==4.2.2
