@@ -34,9 +34,9 @@ chemicals = [c for c in df4.columns if c != "name"]
 chemicals_count_series = df4.fillna(False).groupby(chemicals).count()["name"]
 
 plot(chemicals_count_series, sort_by="cardinality")
-plt.rcParams["figure.figsize"] = (20,3)
-
-plt.savefig('./figures/denovo/Figure_2b-upset-plot-Science2015&NatGen2018.png', bbox_inches='tight')
+fig = plt.gcf()
+fig.set_size_inches(8, 4, forward=True)
+fig.savefig('./figures/denovo/Figure_2b-upset-plot-Science2015&NatGen2018.png', bbox_inches='tight')
 
 
 #///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
