@@ -7,7 +7,7 @@
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 BUCKET = [OPTIONAL] your-bucket-for-syncing-data (do not include 's3://')
 PROFILE = default
-PROJECT_NAME = rose2018ng-FAIRcookiecut
+PROJECT_NAME = rose2018ng-notebook
 PYTHON_INTERPRETER = python3
 
 ifeq (,$(shell which conda))
@@ -23,8 +23,8 @@ endif
 
 ## Install Python Dependencies
 requirements: test_environment
-	pip3 install -U pip setuptools wheel
-	pip3 install -r requirements.txt
+	pip install --upgrade pip setuptools wheel
+	pip install -r requirements.txt
 
 ## Make Dataset
 data: requirements
@@ -38,7 +38,7 @@ figures: requirements
 	# $(PYTHON_INTERPRETER) src/rose-venn.py $(PROJECT_DIR)/data/processed/rose_aroma_compound_science2015_vs-NG2018.csv $(PROJECT_DIR)/figures/denovo/Figure2/Figure_2a-venn-diagram-Science2015\&NatGen2018.png
 	# $(PYTHON_INTERPRETER) src/rose-barplots.py $(PROJECT_DIR)/data/processed/rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv $(PROJECT_DIR)/figures/denovo/Figure3/Figure3-Rose-Scent-Profiles.png
 	$(PYTHON_INTERPRETER) src/rose-plotting-from-datapackage.py
-	# $(PYTHON_INTERPRETER) src/rose-plotting-from-rdf.py
+	$(PYTHON_INTERPRETER) src/rose-plotting-from-rdf.py
 	$(PYTHON_INTERPRETER) src/rose-venn.py
 	$(PYTHON_INTERPRETER) src/rose-upset.py
 
@@ -47,12 +47,12 @@ figures: requirements
 clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
+	find . -type d -name "rdf" -delete
+	find . -type d -name "denovo" -exec rm -r {} \;
 	find ./data/processed/denovo/ -type f -name "*.csv" -delete
 	find ./data/processed/denovo/ -type f -name "*.ttl" -delete
 	find ./figures/denovo/ -type f -name "*.pdf" -delete
 	find ./figures/denovo/ -type f -name "*.png" -delete	
-	find . -type d -name "rdf" -delete
-	find . -name denovo -type d -exec rm -r {} \;
 
 ## Lint using flake8
 lint:

@@ -1,5 +1,12 @@
+#from matplotlib_venn import venn3, venn3_circles
+#from matplotlib import pyplot as plt
+
+import matplotlib
+matplotlib.use('TkAgg')
+
 from matplotlib_venn import venn3, venn3_circles
-from matplotlib import pyplot as plt
+
+import matplotlib.pyplot as plt
 import os, errno
 import pandas as pd
 

@@ -3,6 +3,29 @@ rose2018ng-notebooks
 
 A data science project aiming at making a GC-MS based metabolite profiles of Rose scent published in [Nature Genetics, in June 2018](https://doi.org/10.1038/s41588-018-0110-3) compliant with the [FAIR principles](https://doi.org/10.1038/sdata.2016.18), through the use of several data standards, namely: [Frictionless Tabular data package](https://frictionlessdata.io/specs/tabular-data-package/) as syntax for the data matrix, semantic markup of measurements with [STATO ontology](https://github.com/isa-tools/stato), of chemicals with [CHEBI ontology](http://purl.obolibrary.org/obo/chebi.owl) and InChi for annotation, and insisting on the need to clarify the semantics of data matrices.
 
+To re-enact the FAIRification process we have performed on this dataset, 2 options are available: either running the Make command, or run the Jupyter notebooks which are provided. 
+
+1. Running with Make:
+    
+    - ensure that Python is installed or available in a virtual environment.
+    NOTE: On MacOS, you may need to create the following file, whether running a virtualenv or not:
+    `touch /.matplotlib/matplotlibrc`
+    open the file and  add the following to it: `backend: TkAgg`
+    save and close.
+
+    - from the root folder of the project, invoke the following commands:
+    
+       - to convert the excel and pdf legacy data into the Frictionaless Data Package, do: `make data`
+        (the ouput of the command will be stored in the 'denovo' folder under './data/processed/')
+
+       - to generate the figures (the reference output is stored, under './figures' directory), do: `make figure`
+        (the output of the command will be stored in the 'denovo' folder under './figures') 
+
+       - to restore the project to its initial status, do: `make clean` 
+
+
+2. Running from the Notebooks:
+
 An exhaustive documentation, in the form of a series of jupyter notebooks, is provided. It describes the various steps of the FAIRification process.
 
 + Converting the original Excel spreadsheet released as supplementary material to a Frictionless Tabular Data package.

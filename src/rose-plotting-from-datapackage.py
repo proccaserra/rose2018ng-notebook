@@ -8,7 +8,7 @@ __author__ = 'proccaserra (Philippe Rocca-Serra)'
 # ontology: http://www.stato-ontology.org
 
 #data = pd.read_csv("./rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv")
-data = pd.read_csv("https://sandbox.zenodo.org/api/files/0fba7a4b-9ad9-439c-a0d8-e323dd74e478/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv") 
+data = pd.read_csv("https://zenodo.org/api/files/2e6d9ab9-b6be-4fcb-89e9-96ce8115b450/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv") 
 
 data.head()
 
@@ -44,8 +44,8 @@ except OSError as e:
 ggsave(plot=p1, filename='./figures/denovo/Fig_3a-rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.png', dpi=100)
 
 
-#ng2018sc2015 = pd.read_csv("./rose-data/rose_aroma_compound_science2015_vs-NG2018.csv")
-ng2018sc2015 = pd.read_csv("https://sandbox.zenodo.org/api/files/a904b93c-f615-4c56-842e-094c731f61f5/rose_aroma_compound_science2015_vs-NG2018.csv")
+ng2018sc2015 = pd.read_csv("./data/processed/rose-data/rose_aroma_compound_science2015_vs-NG2018.csv")
+#ng2018sc2015 = pd.read_csv("https://sandbox.zenodo.org/api/files/a904b93c-f615-4c56-842e-094c731f61f5/rose_aroma_compound_science2015_vs-NG2018.csv")
 
 p2 = (ggplot(ng2018sc2015)
  + aes('compound', 'normalized_to_total_sum_concentration',fill='factor(publication_year)')
