@@ -8,9 +8,12 @@ To re-enact the FAIRification process we have performed on this dataset, 2 optio
 1. Running with Make:
     
     - ensure that Python is installed or available in a virtual environment.
+
     NOTE: On MacOS, you may need to create the following file, whether running a virtualenv or not:
     `touch /.matplotlib/matplotlibrc`
+
     open the file and  add the following to it: `backend: TkAgg`
+    
     save and close.
 
     - from the root folder of the project, invoke the following commands:
@@ -20,6 +23,8 @@ To re-enact the FAIRification process we have performed on this dataset, 2 optio
 
        - to generate the figures (the reference output is stored, under './figures' directory), do: `make figure`
         (the output of the command will be stored in the 'denovo' folder under './figures') 
+
+    NOTE: the script `src/rose-plotting-from-rdf.py` runs a sparql query, which may take time to execute. One may wish to bypass this and comment out line 41 on the `make` file    
 
        - to restore the project to its initial status, do: `make clean` 
 
