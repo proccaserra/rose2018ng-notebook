@@ -11,28 +11,34 @@ To re-enact the FAIRification process we have performed on this dataset, 2 optio
 
         - NOTE: On MacOS, you may need to create the following file, whether running a virtualenv or not:
 
-        `touch /.matplotlib/matplotlibrc`
+        ```touch /.matplotlib/matplotlibrc```
 
-        - open the file and  add the following to it: `backend: TkAgg`
+        - open the file and  add the following to it: ```backend: TkAgg```
 
         - save and close.
 
     - from the root folder of the project, invoke the following commands:
     
-       - to convert the excel and pdf legacy data into the Frictionaless Data Package, do: `make data`
+       - to convert the excel and pdf legacy data into the Frictionaless Data Package, do: ```make data```
         (the ouput of the command will be stored in the 'denovo' folder under './data/processed/')
 
-       - to generate the figures (the reference output is stored, under './figures' directory), do: `make figure`
+       - to generate the figures (the reference output is stored, under './figures' directory), do: ```make figure```
         (the output of the command will be stored in the 'denovo' folder under './figures') 
 
-    NOTE: the script `src/rose-plotting-from-rdf.py` runs a sparql query, which may take time to execute. One may wish to bypass this and comment out line 41 on the `make` file    
+       - NOTE: the script ```src/rose-plotting-from-rdf.py``` runs a sparql query, which may take time to execute. One may wish to bypass this and comment out line 41 in the ```make``` file.  
 
-       - to restore the project to its initial status, do: `make clean` (this will remove all denovo create data)
+       - to restore the project to its initial status, do: ```make clean``` (this will remove all denovo create data).
 
 
 2. Running from the Notebooks:
 
-An exhaustive documentation, in the form of a series of jupyter notebooks, is provided. It describes the various steps of the FAIRification process.
+An exhaustive documentation, in the form of a series of jupyter notebooks, is provided. It describes the various steps of the FAIRification process. 
+
++ Start Binder environment based on the repository:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master)
+
+If running with myBinder.org, be aware that it takes some time to build the environment the first time around. Let the process complete. 
 
 + Converting the original Excel spreadsheet released as supplementary material to a Frictionless Tabular Data package.
 
@@ -40,12 +46,16 @@ An exhaustive documentation, in the form of a series of jupyter notebooks, is pr
 
 A data exploration and graphical recapitulation of the dataset is performed in python using the graphic grammar library plotnine from either the Tabular Data Package or from the RDF/Linked Data graph, to demonstrate that equivalency of the representations. A visual exploration also shows how 2 datasets treated with the same protocol can be readily mobilized for a data integration exercise.
 
+(Note: known issue = when using mybinder infrastructure, the call to the libchebi api may time out. This is an issue with the infrastructure, not the code being run)
+
 + Analysing the metabolite profiles using python and the plotnine library from the Frictionless Data Package:
 
 [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F1-rose-metabolites-Python-analysis.ipynb) A Jupyter+Python notebook: 1-rose-metabolites-Python-analysis.ipynb
 
 + Recapitulating the analysis done previously but from an RDF graph and SPARQL queries. 
  A full Linked Data (LD) representation is provided and visualization of the metabolite profiles in 6 rose strains and 3 plants parts is presented.
+
+ (Note: known issue: the 3rd sparql query can take time to execute, be patient) 
 
 [![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F2-rose-metabolites-Python-RDF-querying-analysis.ipynb) A Jupyter+Python+Sparql notebook: 2-rose-metabolites-Python-RDF-querying-analysis.ipynb
 
@@ -71,7 +81,7 @@ If you do not want to use a [virtual environment](http://docs.python-guide.org/e
 1. Create a virtual environment: ```virtualenv my_venv```
 1. Activate the virtual environment ```source my_venv/bin/activate```
 1. Install all the requirements: ```pip install -r requirements.txt```
-1. ipython kernel install --user
+1. ```ipython kernel install --user```
 1. Run jupyter notebook: ```jupyter notebook```
 
 If your system has multiple python versions, you might need to run spefically *python3* and *pip3*, as follows:
@@ -84,7 +94,7 @@ If your system has multiple python versions, you might need to run spefically *p
    1. ```pip3 install --upgrade pip```
    1. ```pip3 install --upgrade setuptools```
 1. Install all the requirements: ```pip3 install -r requirements.txt```
-1. ipython kernel install --user
+1. ```ipython kernel install --user```
 1. Run jupyter notebook: ```jupyter notebook```
 
 
@@ -132,7 +142,7 @@ The installation process requires two steps:
 
 1. Install the Python package::
 
-     pip install sparqlkernel
+     ```pip install sparqlkernel```
 
 2. Install the kernel into Jupyter::
 
@@ -143,9 +153,19 @@ config, while the generic command will install it as a global kernel (but
 needs write permissions in the system directories).
 
 
-## running the 3-rose-metabolites-R-analysis.ipynb requires an R kernel
+## running the 3-rose-metabolites-R-analysis.ipynb requires R installed and an IPython R kernel
 
-It is installed by default with the current set up  configuration
+1. To install R, please see [here](https://www.r-project.org/)
 
-[IRKernel](https://irkernel.github.io)
+2. To install the IPython R kernel, refer to [IRKernel](https://irkernel.github.io)
+    
+    - start R from a terminal (Important: *do not* run R from the app if you try to install the kernel, it must be from a terminal)
+
+    - from the R terminal, issue ```IRkernel::installspec(user=FALSE)```.
+
+    Note: if running into problems (e.g.), try running R with the following command: ```sudo -i R``` first, and then run the kernel installation.
+    if you are still stuck, have a look at [this tutorial](https://mpacer.org/maths/r-kernel-for-ipython-notebook)
+
+
+
 
