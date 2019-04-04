@@ -120,7 +120,9 @@ Project Organization
 
 ## running the 2-rose-metabolites-Python-RDF-querying-analysis.ipynb requires a python sparql kernel
 
-You'll need to set a python sparql kernel  up to be able to run SPARQL
+A python sparql kernel is needed to be able to run SPARQL queries
+
+It is installed by default with the current set up  configuration.
 
 (based on https://github.com/paulovn/sparql-kernel)
 
@@ -145,5 +147,5 @@ needs write permissions in the system directories).
 
 It is installed by default with the current set up  configuration
 
-[IRKernel](https://irknernel.github.io)
+[IRKernel](https://irkernel.github.io)
 
