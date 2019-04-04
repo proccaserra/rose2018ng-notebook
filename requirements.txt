@@ -10,7 +10,7 @@ bokeh==1.0.4
 cached-property==1.5.1
 camelot-py==0.7.2
 cchardet==2.1.4
-certifi==2018.11.29
+certifi>=2018.11.29
 chardet==3.0.4
 click==6.7
 click-default-group==1.2
