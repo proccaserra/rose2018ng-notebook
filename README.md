@@ -9,12 +9,13 @@ To re-enact the FAIRification process we have performed on this dataset, 2 optio
     
     - ensure that Python is installed or available in a virtual environment.
 
-    NOTE: On MacOS, you may need to create the following file, whether running a virtualenv or not:
-    `touch /.matplotlib/matplotlibrc`
+        - NOTE: On MacOS, you may need to create the following file, whether running a virtualenv or not:
 
-    open the file and  add the following to it: `backend: TkAgg`
-    
-    save and close.
+        `touch /.matplotlib/matplotlibrc`
+
+        - open the file and  add the following to it: `backend: TkAgg`
+
+        - save and close.
 
     - from the root folder of the project, invoke the following commands:
     
@@ -26,7 +27,7 @@ To re-enact the FAIRification process we have performed on this dataset, 2 optio
 
     NOTE: the script `src/rose-plotting-from-rdf.py` runs a sparql query, which may take time to execute. One may wish to bypass this and comment out line 41 on the `make` file    
 
-       - to restore the project to its initial status, do: `make clean` 
+       - to restore the project to its initial status, do: `make clean` (this will remove all denovo create data)
 
 
 2. Running from the Notebooks:
@@ -58,6 +59,34 @@ The Four notebooks are available and can be run locally or using the [Binder](ht
 Note that launching notebook with binder may take several minutes (10-15 minutes) for the installation process to complete the first time around and depending on load on the infrastructure. Once done and as long as the build remains on the Binder infrastructure, starting and running the notebooks is very quick. However, bear in mind that the lifespan of these notebook instances on the virtual infrastructure is by nature limited.
 
 If the binder route does not behave, you may run the notebooks locally. See below for the instructions.
+
+## Run in your local machine
+
+You can also choose to run the notebooks in your local machine, as detailed below. You will need *Python 3.6*, *jupyter*, and *virtualenv* (if you want to use virtual environments).
+
+If you do not want to use a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/), skip the first two steps below:
+
+1. Clone this repository: ```git clone https://github.com/proccaserra/rose2018ng-notebook```  
+1. Get into the repository: ```cd rose2018ng-notebook```
+1. Create a virtual environment: ```virtualenv my_venv```
+1. Activate the virtual environment ```source my_venv/bin/activate```
+1. Install all the requirements: ```pip install -r requirements.txt```
+1. ipython kernel install --user
+1. Run jupyter notebook: ```jupyter notebook```
+
+If your system has multiple python versions, you might need to run spefically *python3* and *pip3*, as follows:
+
+1. Clone this repository: ```git clone https://github.com/proccaserra/rose2018ng-notebook.git```  
+1. Get into the repository: ```cd rose2018ng-notebook```
+1. Create a virtual environment, making sure it uses *python3*: ```virtualenv -p python3 my_venv```
+1. Activate the virtual environment ```source my_venv/bin/activate```
+1. Make sure you are running the latest versions of *pip* and *setuptools*:
+   1. ```pip3 install --upgrade pip```
+   1. ```pip3 install --upgrade setuptools```
+1. Install all the requirements: ```pip3 install -r requirements.txt```
+1. ipython kernel install --user
+1. Run jupyter notebook: ```jupyter notebook```
+
 
 
 Project Organization
