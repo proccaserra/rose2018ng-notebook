@@ -36,22 +36,22 @@ An exhaustive documentation, in the form of a series of jupyter notebooks, is pr
 
 + Converting the original Excel spreadsheet released as supplementary material to a Frictionless Tabular Data package.
 
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F0-rose-metabolites-Python-data-handling.ipynb) A Jupyter+Python notebook: 0-rose-metabolites-Python-data-handling.ipynb
+[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F0-rose-metabolites-Python-data-handling.ipynb) A Jupyter+Python notebook: 0-rose-metabolites-Python-data-handling.ipynb
 
 A data exploration and graphical recapitulation of the dataset is performed in python using the graphic grammar library plotnine from either the Tabular Data Package or from the RDF/Linked Data graph, to demonstrate that equivalency of the representations. A visual exploration also shows how 2 datasets treated with the same protocol can be readily mobilized for a data integration exercise.
 
 + Analysing the metabolite profiles using python and the plotnine library from the Frictionless Data Package:
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F1-rose-metabolites-Python-analysis.ipynb) A Jupyter+Python notebook: 1-rose-metabolites-Python-analysis.ipynb
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F1-rose-metabolites-Python-analysis.ipynb) A Jupyter+Python notebook: 1-rose-metabolites-Python-analysis.ipynb
 
 + Recapitulating the analysis done previously but from an RDF graph and SPARQL queries. 
  A full Linked Data (LD) representation is provided and visualization of the metabolite profiles in 6 rose strains and 3 plants parts is presented.
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F2-rose-metabolites-Python-RDF-querying-analysis.ipynb) A Jupyter+Python+Sparql notebook: 2-rose-metabolites-Python-RDF-querying-analysis.ipynb
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F2-rose-metabolites-Python-RDF-querying-analysis.ipynb) A Jupyter+Python+Sparql notebook: 2-rose-metabolites-Python-RDF-querying-analysis.ipynb
 
 + A fourth notebook performs the visual exploration of the dataset using R, to show case how the Tabular Data Package can be consumed in a different environment very easily.
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/dev?filepath=%2Fnotebooks%2F3-rose-metabolites-R-analysis.ipynb) A Jupyter+R notebook: 3-rose-metabolites-R-analysis.ipynb
+[![Binder](http://mybinder.org/badge_logo.svg)](http://beta.mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F3-rose-metabolites-R-analysis.ipynb) A Jupyter+R notebook: 3-rose-metabolites-R-analysis.ipynb
 
 
 The Four notebooks are available and can be run locally or using the [Binder](https://mybinder.org/) infrastructure.
