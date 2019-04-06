@@ -46,13 +46,13 @@ Project Organization
     - ```make clean``` to restore the project to its initial status, this will remove all "denovo" created data).
 
 
-##2. Running the Notebooks with Jupyter:
+## 2. Running the Notebooks with Jupyter:
 
 An exhaustive documentation, in the form of a series of jupyter notebooks, is provided. It describes the various steps of the FAIRification process. 
 The Four notebooks are available and can be run locally or using the [Binder](https://mybinder.org/) infrastructure.
 Note that launching notebook with binder may take several minutes (10-15 minutes) for the installation process to complete the first time around and depending on load on the infrastructure. Once done and as long as the build remains on the Binder infrastructure, starting and running the notebooks is very quick. However, bear in mind that the lifespan of these notebook instances on the virtual infrastructure is by nature limited.
 
-###2.1 Running the notebooks using mybinder infrastructure:
+### 2.1 Running the notebooks using mybinder infrastructure:
 
 + Start Binder environment based on the repository:
 
