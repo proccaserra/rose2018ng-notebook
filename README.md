@@ -30,7 +30,7 @@ Project Organization
     └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
 
-1. Running with Make:
+## 1. Running with Make:
     
 - ensure that Python 3.6 is installed or available in a virtual environment.
     - NOTE: On MacOS, whether running a virtualenv or not, you may need to create the following file:
@@ -46,13 +46,13 @@ Project Organization
     - ```make clean``` to restore the project to its initial status, this will remove all "denovo" created data).
 
 
-2. Running the Notebooks with Jupyter:
+##2. Running the Notebooks with Jupyter:
 
 An exhaustive documentation, in the form of a series of jupyter notebooks, is provided. It describes the various steps of the FAIRification process. 
 The Four notebooks are available and can be run locally or using the [Binder](https://mybinder.org/) infrastructure.
 Note that launching notebook with binder may take several minutes (10-15 minutes) for the installation process to complete the first time around and depending on load on the infrastructure. Once done and as long as the build remains on the Binder infrastructure, starting and running the notebooks is very quick. However, bear in mind that the lifespan of these notebook instances on the virtual infrastructure is by nature limited.
 
-2. Running the notebooks using mybinder infrastructure:
+###2.1 Running the notebooks using mybinder infrastructure:
 
 + Start Binder environment based on the repository:
 
@@ -87,7 +87,7 @@ A data exploration and graphical recapitulation of the dataset is performed in p
 If the binder route does not behave, simply run the notebooks locally, following the instructions below.
 
 
-2. Running the notebooks locally using Jupyter on your machine:
+### 2.2. Running the notebooks locally using Jupyter on your machine:
 
 You will need *Python 3.6*, *jupyter*, and *virtualenv* (if you want to use virtual environments).
 
@@ -103,7 +103,7 @@ If you do not want to use a [virtual environment](http://akbaribrahim.com/managi
 1. Run jupyter notebook: ```jupyter notebook```
 
 
-### Running the 2-rose-metabolites-Python-RDF-querying-analysis.ipynb requires a python sparql kernel
+#### Running the 2-rose-metabolites-Python-RDF-querying-analysis.ipynb requires a python sparql kernel
 
 A python sparql kernel is needed to be able to run SPARQL queries
 
@@ -123,15 +123,17 @@ config, while the generic command will install it as a global kernel (but
 needs write permissions in the system directories).
 
 
-### Running the 3-rose-metabolites-R-analysis.ipynb requires R installed and an IPython R kernel
+#### Running the 3-rose-metabolites-R-analysis.ipynb requires R installed and an IPython R kernel
 
 To install R, please see [here](https://www.r-project.org/)
 To install the IPython R kernel, refer to [IRKernel](https://irkernel.github.io):
     
-    1. Start R from a terminal (Important: *do not* run R from the app if you try to install the kernel, it must be from a terminal)
-    1. From the R terminal, issue ```IRkernel::installspec(user=FALSE)```.
-    Note: if running into problems (e.g.), try running R with the following command: ```sudo -i R``` first, and then run the kernel installation.
-    if you are still stuck, have a look at [this tutorial](https://mpacer.org/maths/r-kernel-for-ipython-notebook)
+    1. Start R from a terminal 
+    (Important: *do not* run R from the app if you try to install the kernel, it must be from a terminal)
+    2. From the R terminal, issue ```IRkernel::installspec(user=FALSE)```.
+    Note: if running into problems (e.g.), try running R with the following command: 
+    ```sudo -i R``` first, and then run the kernel installation.
+    If you are still stuck, have a look at [this tutorial](https://mpacer.org/maths/r-kernel-for-ipython-notebook)
 
 
 
