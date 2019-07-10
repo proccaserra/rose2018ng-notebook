@@ -92,8 +92,8 @@
             },
             {
                 "name": "var1_uri",
-                "title": "a resolvable uri for the levels of variable #1",
-                "description": "discrete levels of an independent variable",
+                "title": "resolvable uris for the levels of variable #1",
+                "description": "resolvable uri for each discrete level of an independent variable",
                 "format": "default",
                 "type": "string",
                 "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
@@ -103,7 +103,7 @@
             },
             {
                 "name": "var2_levels",
-                "title": "levels for variable 1",
+                "title": "levels for variable #2",
                 "description": "discrete levels of an independent variable",
                 "format": "default",
                 "type": "string",
@@ -114,8 +114,8 @@
             },
             {
                 "name": "var2_uri",
-                "title": "a resolvable uri for the levels of variable #2s",
-                "description": "discrete levels of an independent variable",
+                "title": "resolvable uris for the levels of variable #2",
+                "description": "resolvable uri for each discrete levels of an independent variable",
                 "format": "default",
                 "type": "string",
                 "rdfType": "http://purl.obolibrary.org/obo/OBI_0002110",
@@ -126,7 +126,7 @@
             {
                 "name": "treatment",
                 "title": "factor level combination",
-                "description": "a treatment group defined as combination of independent variable factor levels",
+                "description": "a treatment group defined as combination of independent variable levels",
                 "format": "default",
                 "type": "string",
                 "rdfType": "http://purl.obolibrary.org/obo/STATO_0000264",
