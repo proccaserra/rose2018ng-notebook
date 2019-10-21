@@ -62,7 +62,7 @@ Once again, if running with myBinder.org, be aware that it takes some time to bu
 
 2. Start Binder environment from individual notebooks:
 
-    + Converting the original Excel spreadsheet released as supplementary material to a Frictionless Tabular Data package.
+    + Converting the original Excel spreadsheet released as associated material to a Frictionless Tabular Data package.
 
     [![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/master?filepath=%2Fnotebooks%2F0-rose-metabolites-Python-data-handling.ipynb) A Jupyter+Python notebook: 0-rose-metabolites-Python-data-handling.ipynb
 
