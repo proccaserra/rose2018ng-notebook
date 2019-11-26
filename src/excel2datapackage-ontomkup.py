@@ -79,11 +79,6 @@ try:
 except IOError as e:
     print(e)
 
-# try:
-#     cwd = os.getcwd()
-#     print("working directory: ",cwd)
-# except IOError as e:
-#     print(e)
 
 # Following a manual inspection of the Excel Source, getting the start row of the data
 # We use Pandas take() function to extract first a row of headers (hence -axis set to 0)

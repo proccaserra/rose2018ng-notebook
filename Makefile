@@ -47,7 +47,6 @@ figures: requirements
 clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
-	find . -type d -name "rdf" -delete
 	find . -type d -name "denovo" -exec rm -r {} \;
 	find ./data/processed/denovo/ -type f -name "*.csv" -delete
 	find ./data/processed/denovo/ -type f -name "*.ttl" -delete

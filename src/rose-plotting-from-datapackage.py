@@ -1,13 +1,15 @@
 import pandas as pd
 import os, errno
 from plotnine import *
+# matplotlib.use('Qt5Agg')
+
 
 __author__ = 'proccaserra (Philippe Rocca-Serra)'
 
 # author: philippe rocca-serra (philippe.rocca-serra@oerc.ox.ac.uk)
 # ontology: http://www.stato-ontology.org
 
-data = pd.read_csv("./data/processed/rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv")
+data = pd.read_csv("../data/processed/rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv")
 # data = pd.read_csv("https://zenodo.org/api/files/2e6d9ab9-b6be-4fcb-89e9-96ce8115b450/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv") #old doi
 # data = pd.read_csv("https://zenodo.org/api/files/ba3fbc84-14af-4858-a9ed-e6cfe8d4efd2/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv") #latest doi file path from JSON-LD
 data.head()
