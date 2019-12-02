@@ -301,7 +301,7 @@ def process(a_csv_reader):
     for element in chem_frags:
         saveAsttl.write(element+"\n")
 
-    print(f'Processed {line_count} lines.')
+    print('Processed {line_count} lines.')
 
 
 base_cwd = os.getcwd()
@@ -321,16 +321,16 @@ tablefile = os.path.join('../data/processed/rose-data/',
 
 
 try:
-    if not os.path.exists('./data/processed/denovo/rdf'):
-        os.makedirs('./data/processed/denovo/rdf')
-        os.chdir('./data/processed/denovo/rdf')
+    if not os.path.exists('../data/processed/denovo/rdf'):
+        os.makedirs('../data/processed/denovo/rdf')
+        os.chdir('../data/processed/denovo/rdf')
         cwd = os.getcwd()
         print("and here from if", cwd)
         saveAsttl = open('rose-aroma-ng-06-2018-full.ttl', 'w')
 
     else:
         print("path already created:")
-        os.chdir('./data/processed/denovo/rdf')
+        os.chdir('../data/processed/denovo/rdf')
         cwd = os.getcwd()
         print("and here from else", cwd)
         saveAsttl = open('rose-aroma-ng-06-2018-full.ttl', 'w')
@@ -376,7 +376,7 @@ try:
         except IOError as ioe:
             print(ioe)
     else:
-        filename = os.path.join(base_cwd, 'src', tablefile)
+        filename = os.path.join(base_cwd,  tablefile)
         print(filename)
         try:
             with open(filename) as csv_file:

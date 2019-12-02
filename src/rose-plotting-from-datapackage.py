@@ -21,7 +21,7 @@ orange = '#FF8000'
 blue = '#3333FF'
 
 p1 = (ggplot(data)
- + aes('chemical_name', 'sample_mean',fill='factor(treatment)')
+ + aes('chemical_name', 'sample_mean', fill='factor(treatment)')
  + geom_col()
  
  + theme(axis_text_x=element_text(rotation=90, hjust=1, fontsize=6, color=blue))
@@ -37,16 +37,16 @@ p1 + theme(panel_background=element_rect(fill=blue)
 p1
 
 try:
-    if not os.path.exists('./figures/denovo'):
-        os.makedirs('./figures/denovo')
+    if not os.path.exists('../figures/denovo'):
+        os.makedirs('../figures/denovo')
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
 
-ggsave(plot=p1, filename='./figures/denovo/Fig_3a-rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.png', dpi=100)
+ggsave(plot=p1, filename='../figures/denovo/Fig_3a-rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.png', dpi=100)
 
 
-ng2018sc2015 = pd.read_csv("./data/processed/rose-data/rose_aroma_compound_science2015_vs_NG2018_data_integration.csv")
+ng2018sc2015 = pd.read_csv("../data/processed/rose-data/rose_aroma_compound_science2015_vs_NG2018_data_integration.csv")
 # ng2018sc2015 = pd.read_csv("https://zenodo.org/api/files/268f29fc-8ead-4049-bb86-181b72073682/rose_aroma_compound_science2015_vs_NG2018_data_integration.csv") #latest doi file path from JSON-LD
 
 p2 = (ggplot(ng2018sc2015)
@@ -57,6 +57,6 @@ p2 = (ggplot(ng2018sc2015)
 
 )
 
-ggsave(plot=p2, filename='./figures/denovo/Fig_3b-rose_aroma_compound_science2015_vs-NG2018.png', dpi=100)
+ggsave(plot=p2, filename='../figures/denovo/Fig_3b-rose_aroma_compound_science2015_vs-NG2018.png', dpi=100)
 
 

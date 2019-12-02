@@ -91,136 +91,139 @@ def make_sparql_df(results, sparql_wrapper="SPARQLWrapper2"):
 
 g = Graph()
 
-g.parse("./data/processed/rose-data-as-rdf/rose-aroma-ng-06-2018-full.ttl", format="n3")
+g.parse("/Users/philippe/Documents/git/rose2018ng-notebook/data/processed/denovo/rdf/rose-aroma-ng-06-2018-full.ttl", format="n3")
 # g.parse("./data/processed/denovo/rdf/rose-aroma-ng-06-2018-full.ttl", format="n3")
 
+print(g)
 
-get_idv_and_levels = g.query("""
+get_idv_and_levels = g.query(
+"""
 PREFIX stato: <http://purl.obolibrary.org/obo/STATO_>
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX ncbitax: <http://purl.obolibrary.org/obo/NCBITax_>
-prefix has_part: <http://purl.obolibrary.org/obo/BFO_0000051> 
-prefix ro: <http://purl.obolibrary.org/obo/RO_> 
-            SELECT DISTINCT
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ncbitax: <http://purl.obolibrary.org/obo/NCBITaxon_>
+PREFIX has_part: <http://purl.obolibrary.org/obo/BFO_0000051>
+SELECT DISTINCT
              ?Predictor
              ?PredictorLevel
-             WHERE { 
+             WHERE {
                 ?var a stato:0000087 ;
-                    rdfs:label ?Predictor;
-                    has_part ?value.
-                ?value rdfs:label ?PredictorLevel    
-                 }               
-""")
+                     rdfs:label ?Predictor ;
+                     has_part: ?value .
+                ?value rdfs:label ?PredictorLevel .
+                 }
+"""
+)
 
+# for row in get_idv_and_levels:
+#     print("%s knows %s" % row)
 
 queryResultToHTMLTable(get_idv_and_levels)
 
 
 get_replication_info = g.query("""
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-prefix chmo:   <http://purl.obolibrary.org/obo/CHMO_> 
-prefix msio:   <http://purl.obolibrary.org/obo/MSIO_> 
-prefix stato: <http://purl.obolibrary.org/obo/STATO_> 
-prefix obi: <http://purl.obolibrary.org/obo/OBI_> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix chmo:   <http://purl.obolibrary.org/obo/CHMO_>
+prefix msio:   <http://purl.obolibrary.org/obo/MSIO_>
+prefix stato: <http://purl.obolibrary.org/obo/STATO_>
+prefix obi: <http://purl.obolibrary.org/obo/OBI_>
 prefix ro: <http://purl.obolibrary.org/obo/RO_>
 prefix po: <http://purl.obolibrary.org/obo/PO_>
 prefix has_member: <http://purl.obolibrary.org/obo/RO_0002351>
-prefix has_value: <http://purl.obolibrary.org/obo/STATO_0000129> 
+prefix has_value: <http://purl.obolibrary.org/obo/STATO_0000129>
 prefix computed_from: <http://purl.obolibrary.org/obo/STATO_0000557>
 prefix has_specified_input: <http://purl.obolibrary.org/obo/OBI_0000293>
 prefix has_specified_output: <http://purl.obolibrary.org/obo/OBI_0000299>
 prefix is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
-prefix is_specified_input_of: <http://purl.obolibrary.org/obo/OBI_0000295>
+prefix is_specified_output_of: <http://purl.obolibrary.org/obo/OBI_0000295>
 
-SELECT        
-      ?TreatmentGroup        
-      (count(distinct ?member) as ?NbTechnicalReplicate) 
-      (count(distinct ?input) as ?NbBiologicalReplicate) 
+SELECT
+      ?TreatmentGroup
+      (count(distinct ?member) as ?NbTechnicalReplicate)
+      (count(distinct ?input) as ?NbBiologicalReplicate)
       WHERE {
             ?population a stato:0000193 ;
                 rdfs:label ?TreatmentGroup ;
-                has_member ?member .      
-            ?member has_specified_input ?input .              
+                has_member: ?member .
+            ?member has_specified_input: ?input .
             ?mean a stato:0000402 ;
-                computed_from ?population ;
-                has_value ?MeanConcentration ;
-                is_about ?ChemicalCompound .
+                computed_from: ?population ;
+                has_value: ?MeanConcentration ;
+                is_about: ?ChemicalCompound .
             ?concentration a stato:0000072;
-                is_specified_output ?assay ;
-                is_about ?ChemicalCompound .
+                is_specified_output_of: ?assay ;
+                is_about: ?ChemicalCompound .
             }
-      GROUP BY ?population 
+      GROUP BY ?population
 """)
 
 queryResultToHTMLTable(get_replication_info)
 
-get_all_data = g.query("""
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-prefix chmo:   <http://purl.obolibrary.org/obo/CHMO_> 
-prefix msio:   <http://purl.obolibrary.org/obo/MSIO_> 
-prefix stato: <http://purl.obolibrary.org/obo/STATO_> 
-prefix obi: <http://purl.obolibrary.org/obo/OBI_> 
-prefix ro: <http://purl.obolibrary.org/obo/RO_>
-prefix po: <http://purl.obolibrary.org/obo/PO_>
-prefix has_value: <http://purl.obolibrary.org/obo/STATO_0000129>
-prefix computed_from: <http://purl.obolibrary.org/obo/STATO_0000557>
-prefix is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
-prefix is_denoted_by: <http://purl.obolibrary.org/obo/STATO_0000205>
-prefix derives_from: <http://purl.obolibrary.org/obo/RO_0001000> 
-prefix located_in: <http://purl.obolibrary.org/obo/RO_0001025>
-prefix denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
-prefix measured_in: <http://purl.obolibrary.org/obo/STATO_0000XYZ> 
-
-
-SELECT DISTINCT  ?chemical_name ?chebi_identifier  ?inchi ?sample_mean ?sem ?treatment ?genotype ?organism_part
-WHERE {
-    ?pop_mean a stato:0000402 ;
-        is_about ?chebi_identifier ;
-        computed_from ?population ;
-        has_value ?sample_mean .
-    ?chem a ?chebi_identifier ;
-        rdfs:label ?chemical_name ;
-        is_denoted_by ?inchi .    
-    ?semv a stato:0000037 ; 
-        denotes: ?pop_mean ;
-        has_value: ?sem.
-    ?population a stato:0000193 ;
-        rdfs:label ?treatment .
-    ?sub_conc a stato:0000072 ;
-        derives_from: ?genotype ;
-        located_in: ?organism_part;
-        measured_in: ?population .
-
-}        
-""")
-
-queryResultToHTMLTable(get_all_data)
-
-data = make_sparql_df(get_all_data)
+# get_all_data = g.query("""
+# prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# prefix chmo:   <http://purl.obolibrary.org/obo/CHMO_>
+# prefix msio:   <http://purl.obolibrary.org/obo/MSIO_>
+# prefix stato: <http://purl.obolibrary.org/obo/STATO_>
+# prefix obi: <http://purl.obolibrary.org/obo/OBI_>
+# prefix ro: <http://purl.obolibrary.org/obo/RO_>
+# prefix po: <http://purl.obolibrary.org/obo/PO_>
+# prefix has_value: <http://purl.obolibrary.org/obo/STATO_0000129>
+# prefix computed_from: <http://purl.obolibrary.org/obo/STATO_0000557>
+# prefix is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+# prefix is_denoted_by: <http://purl.obolibrary.org/obo/STATO_0000205>
+# prefix derives_from: <http://purl.obolibrary.org/obo/RO_0001000>
+# prefix located_in: <http://purl.obolibrary.org/obo/RO_0001025>
+# prefix denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
+# prefix measured_in: <http://purl.obolibrary.org/obo/STATO_0000XYZ>
+#
+#
+# SELECT DISTINCT  ?chemical_name ?chebi_identifier  ?inchi ?sample_mean ?sem ?treatment ?genotype ?organism_part
+# WHERE {
+#     ?pop_mean a stato:0000402 ;
+#         is_about: ?chebi_identifier ;
+#         computed_from: ?population ;
+#         has_value: ?sample_mean .
+#     ?chem a ?chebi_identifier ;
+#         rdfs:label ?chemical_name ;
+#         is_denoted_by: ?inchi .
+#     ?semv a stato:0000037 ;
+#         denotes: ?pop_mean ;
+#         has_value: ?sem.
+#     ?population a stato:0000193 ;
+#         rdfs:label ?treatment .
+#     ?sub_conc a stato:0000072 ;
+#         derives_from: ?genotype ;
+#         located_in: ?organism_part;
+#         measured_in: ?population .
+#
+# }
+# """)
+#
+# queryResultToHTMLTable(get_all_data)
+#
+# data = make_sparql_df(get_all_data)
 
 
 # width = figure_size[0]
 # height = figure_size[0] * aspect_ratio
-gray = '#666666'
-orange = '#FF8000'
-blue = '#3333FF'
-
-p1 = (ggplot(data)
- + aes('chemical_name','sample_mean',fill='factor(treatment)')
- + geom_col()
- + facet_wrap('~treatment', dir='v',ncol=1)
- + scale_y_continuous(expand = (0,0))
- + theme(axis_text_x=element_text(rotation=90, hjust=1, fontsize=6, color=blue))
- + theme(axis_text_y=element_text(rotation=0, hjust=2, fontsize=6, color=orange))
-         + theme(figure_size = (8, 16))
-)
-
-p1 + theme(panel_background=element_rect(fill=blue)
-       )
-
-p1
-
-
-ggsave(plot=p1, filename='./figures/denovo/Fig_3c-rose-aroma-naturegenetics2018-from-RDF.png', dpi=100)
-
-       
+# gray = '#666666'
+# orange = '#FF8000'
+# blue = '#3333FF'
+#
+# p1 = (ggplot(data)
+#  + aes('chemical_name','sample_mean',fill='factor(treatment)')
+#  + geom_col()
+#  + facet_wrap('~treatment', dir='v',ncol=1)
+#  + scale_y_continuous(expand = (0,0))
+#  + theme(axis_text_x=element_text(rotation=90, hjust=1, fontsize=6, color=blue))
+#  + theme(axis_text_y=element_text(rotation=0, hjust=2, fontsize=6, color=orange))
+#          + theme(figure_size = (8, 16))
+# )
+#
+# p1 + theme(panel_background=element_rect(fill=blue)
+#        )
+#
+# p1
+#
+#
+# ggsave(plot=p1, filename='./figures/denovo/Fig_3c-rose-aroma-naturegenetics2018-from-RDF.png', dpi=100)
+#

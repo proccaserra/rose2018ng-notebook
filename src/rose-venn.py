@@ -92,13 +92,13 @@ for text in v1.set_labels:
 # plt.show()
 
 try:
-    if not os.path.exists('./figures/denovo'):
-        os.makedirs('./figures/denovo')
+    if not os.path.exists('../figures/denovo'):
+        os.makedirs('../figures/denovo')
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
 
-plt.savefig('./figures/denovo/Figure_2a-venn-diagram-Science2015&NatGen2018.png', bbox_inches='tight')
+plt.savefig('../figures/denovo/Figure_2a-venn-diagram-Science2015&NatGen2018.png', bbox_inches='tight')
 
 #///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 # input for generating figure 2 using upSetR:
