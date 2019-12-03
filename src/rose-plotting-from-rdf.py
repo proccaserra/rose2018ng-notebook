@@ -44,7 +44,7 @@ def queryResultToHTMLTable(queryResult):
 def get_sparql_variables(results, sparql_wrapper="SPARQLWrapper2"):
     # return results.vars if ("sparqlwrapper2" == sparql_wrapper.lower()) else results['head']['vars']
     return results.vars if ("sparqlwrapper2" == sparql_wrapper.lower()) else results.vars
-    print(results.vars)
+    # print(results.vars)
 
 
 def get_sparql_bindings(results, sparql_wrapper="SPARQLWrapper2"):

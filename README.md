@@ -59,6 +59,8 @@ Note that launching notebook with binder may take several minutes (10-15 minutes
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/proccaserra/rose2018ng-notebook/revisionfix)
 
 Once again, if running with myBinder.org, be aware that it takes some time to build the environment the first time around. Let the process complete. 
+Important: one may see the following message `Failed to connect to event stream` from the Binder page while it builds. If this occurs, simply refresh the page and let the process run until the notebook is launched.
+
 
 2. Start Binder environment from individual notebooks:
 
@@ -68,7 +70,7 @@ Once again, if running with myBinder.org, be aware that it takes some time to bu
 
     A data exploration and graphical recapitulation of the dataset is performed in python using the graphic grammar library plotnine from either the Tabular Data Package or from the RDF/Linked Data graph, to demonstrate that equivalency of the representations. A visual exploration also shows how 2 datasets treated with the same protocol can be readily mobilized for a data integration exercise.
 
-    (Note: known issue = when using mybinder infrastructure, the call to the libchebi api may time out. This is an issue with the infrastructure, not the code being run). Running the code locally (see below for instructions).
+    (Note: known issue = when using mybinder infrastructure, *calls to the libchebi api may time out*. This is an issue with the infrastructure, not the code being run). Running the code locally (see below for instructions).
 
     + Analysing the metabolite profiles using python and the plotnine library from the Frictionless Data Package:
 
@@ -91,7 +93,7 @@ Once again, if running with myBinder.org, be aware that it takes some time to bu
 
 ### 2.2. Running the notebooks locally using Jupyter on your machine:
 
-You will need *Python 3.6*, *jupyter*, and *virtualenv* (if you want to use virtual environments).
+You will need *Python 3.6 or higher *, *jupyter*, and *virtualenv* (if you want to use virtual environments).
 
 1. Clone this repository: ```git clone https://github.com/proccaserra/rose2018ng-notebook```  
 1. Get into the repository: ```cd rose2018ng-notebook```
