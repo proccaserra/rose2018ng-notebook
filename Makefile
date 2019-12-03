@@ -27,27 +27,27 @@ requirements: test_environment
 	pip install -r requirements.txt
 
 ## Make Dataset
-data: requirements
-		$(PYTHON_INTERPRETER) src/excel2datapackage-ontomkup.py 	
-		$(PYTHON_INTERPRETER) src/pdf-tables2datapackage.py 
-		$(PYTHON_INTERPRETER) src/rose-dtpkg2rdf.py
+data : requirements
+	pwd
+	cd src; \
+	$(PYTHON_INTERPRETER) excel2datapackage-ontomkup.py ;	\
+	$(PYTHON_INTERPRETER) pdf-tables2datapackage.py ;\
+	$(PYTHON_INTERPRETER) rose-dtpkg2rdf.py ;\
 
 
 ## Make plots from data as figures for publications
 figures: requirements
-	# $(PYTHON_INTERPRETER) src/rose-venn.py $(PROJECT_DIR)/data/processed/rose_aroma_compound_science2015_vs-NG2018.csv $(PROJECT_DIR)/figures/denovo/Figure2/Figure_2a-venn-diagram-Science2015\&NatGen2018.png
-	# $(PYTHON_INTERPRETER) src/rose-barplots.py $(PROJECT_DIR)/data/processed/rose-data/rose-aroma-naturegenetics2018-treatment-group-mean-sem-report-table-example.csv $(PROJECT_DIR)/figures/denovo/Figure3/Figure3-Rose-Scent-Profiles.png
-	$(PYTHON_INTERPRETER) src/rose-plotting-from-datapackage.py
-	$(PYTHON_INTERPRETER) src/rose-plotting-from-rdf.py
-	$(PYTHON_INTERPRETER) src/rose-venn.py
-# 	$(PYTHON_INTERPRETER) src/rose-upset.py
-
+	pwd
+	cd src; \
+	$(PYTHON_INTERPRETER) rose-plotting-from-datapackage.py ; \
+	$(PYTHON_INTERPRETER) rose-venn.py ; \
+	$(PYTHON_INTERPRETER) rose-upset.py ; \
+	# $(PYTHON_INTERPRETER) ./src/rose-plotting-from-rdf.py
 
 ## Delete all compiled Python files and generated outputs
 clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
-	find . -type d -name "rdf" -delete
 	find . -type d -name "denovo" -exec rm -r {} \;
 	find ./data/processed/denovo/ -type f -name "*.csv" -delete
 	find ./data/processed/denovo/ -type f -name "*.ttl" -delete

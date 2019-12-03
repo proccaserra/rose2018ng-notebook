@@ -52,7 +52,7 @@ def validate_datapkg(tab_data_package_file, data_package_definition):
 
 
 cwd = os.getcwd()
-os.chdir('./data/raw')
+os.chdir('../data/raw')
 cwd = os.getcwd()
 
 # invoking camelot to read a pdf file and extracting tables located at specific pages

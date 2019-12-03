@@ -10,8 +10,8 @@ __author__ = 'proccaserra (Philippe Rocca-Serra)'
 
 
 try:
-    if not os.path.exists('./figures/denovo'):
-        os.makedirs('./figures/denovo')
+    if not os.path.exists('../figures/denovo'):
+        os.makedirs('../figures/denovo')
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
@@ -41,7 +41,7 @@ chemicals_count_series = df4.fillna(False).groupby(chemicals).count()["name"]
 plot(chemicals_count_series, sort_by="cardinality")
 fig = plt.gcf()
 fig.set_size_inches(8, 4, forward=True)
-fig.savefig('./figures/denovo/Figure_2b-upset-plot-Science2015&NatGen2018.png', bbox_inches='tight')
+fig.savefig('../figures/denovo/Figure_2b-upset-plot-Science2015&NatGen2018.png', bbox_inches='tight')
 
 
 #///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
