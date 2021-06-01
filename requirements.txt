@@ -128,7 +128,7 @@ tornado==5.1.1
 traitlets==4.3.2
 unicodecsv==0.14.1
 upsetplot>=0.2.0
-urllib3==1.24.2
+urllib3==1.26.5
 virtualenv==16.4.0
 virtualenv-clone==0.5.1
 wcwidth==0.1.7
