@@ -80,7 +80,7 @@ pdfminer.six==20181108
 pexpect==4.6.0
 pickleshare==0.7.5
 Pillow==6.2.0
-pipenv==2018.11.26
+pipenv==2022.1.8
 plotnine==0.5.1
 poyo==0.4.2
 progressbar2==3.39.2
